@@ -1,0 +1,58 @@
+Stellar TSP Log - 2025-09-22T14:51:57.164201
+Acceleration: 100.0 G
+Start Star: Sol
+End Star: Delta Pavonis
+==================================================
+
+
+--- Leg-by-Leg Analysis ---
+Leg                                    |   Distance (ly) |   Ship Time (y) |    Sol Time (y) |  Max Speed (%c)
+------------------------------------------------------------------------------------------------------------------------
+--- Calculating legs from: Sol (Time: 0.00 y) ---
+  SUBMITTED: Sol -> Ross 154
+  SUBMITTED: Sol -> Altair
+  SUBMITTED: Sol -> Epsilon Eridani
+  SUBMITTED: Sol -> YZ Canis Minoris
+Sol -> Altair                          |           16.73 |            0.09 |       16.748361 |       99.999931
+  COMPLETED: Sol -> Altair. Sol Time: 16.75 y. Attempts: 7.  Total running time: 0:00:03.113551
+Sol -> Ross 154                        |            9.71 |            0.08 |        9.725766 |       99.999782
+  COMPLETED: Sol -> Ross 154. Sol Time: 9.73 y. Attempts: 7.  Total running time: 0:00:03.137350
+Sol -> Epsilon Eridani                 |           10.48 |            0.07 |       10.495046 |       99.999822
+  COMPLETED: Sol -> Epsilon Eridani. Sol Time: 10.50 y. Attempts: 7.  Total running time: 0:00:03.167238
+Sol -> YZ Canis Minoris                |           19.53 |            0.10 |       19.554791 |       99.999951
+  COMPLETED: Sol -> YZ Canis Minoris. Sol Time: 19.55 y. Attempts: 7.  Total running time: 0:00:03.395815
+
+>>> CHOSEN LEG: Sol -> Ross 154
+
+--- Calculating legs from: Ross 154 (Time: 10.73 y) ---
+  SUBMITTED: Ross 154 -> Altair
+  SUBMITTED: Ross 154 -> Epsilon Eridani
+  SUBMITTED: Ross 154 -> YZ Canis Minoris
+Ross 154 -> YZ Canis Minoris           |           28.67 |            0.09 |       28.685445 |       99.999974
+  COMPLETED: Ross 154 -> YZ Canis Minoris. Sol Time: 28.69 y. Attempts: 7.  Total running time: 0:00:04.726693
+Ross 154 -> Altair                     |           10.54 |            0.11 |       10.562328 |       99.999808
+  COMPLETED: Ross 154 -> Altair. Sol Time: 10.56 y. Attempts: 7.  Total running time: 0:00:04.982697
+Ross 154 -> Epsilon Eridani            |           17.61 |            0.08 |       17.634162 |       99.999937
+  COMPLETED: Ross 154 -> Epsilon Eridani. Sol Time: 17.63 y. Attempts: 7.  Total running time: 0:00:05.140243
+
+>>> CHOSEN LEG: Ross 154 -> Altair
+
+--- Calculating legs from: Altair (Time: 22.29 y) ---
+  SUBMITTED: Altair -> Epsilon Eridani
+  SUBMITTED: Altair -> YZ Canis Minoris
+Altair -> Epsilon Eridani              |           23.36 |            0.09 |       23.379388 |       99.999963
+  COMPLETED: Altair -> Epsilon Eridani. Sol Time: 23.38 y. Attempts: 7.  Total running time: 0:00:06.518157
+Altair -> YZ Canis Minoris             |           36.05 |            0.12 |       36.072043 |       99.999984
+  COMPLETED: Altair -> YZ Canis Minoris. Sol Time: 36.07 y. Attempts: 7.  Total running time: 0:00:07.496268
+
+>>> CHOSEN LEG: Altair -> Epsilon Eridani
+
+--- Calculating legs from: Epsilon Eridani (Time: 46.67 y) ---
+  SUBMITTED: Epsilon Eridani -> YZ Canis Minoris
+Epsilon Eridani -> YZ Canis Minoris    |           17.67 |            0.09 |       17.692604 |       99.999942
+  COMPLETED: Epsilon Eridani -> YZ Canis Minoris. Sol Time: 17.69 y. Attempts: 7.  Total running time: 0:00:08.691657
+
+>>> CHOSEN LEG: Epsilon Eridani -> YZ Canis Minoris
+
+--- Calculating final leg from: YZ Canis Minoris -> Delta Pavonis ---
+  COMPLETED: YZ Canis Minoris -> Delta Pavonis. Sol Time: 31.84 y. Attempts: 7

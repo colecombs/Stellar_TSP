@@ -1,0 +1,30 @@
+Stellar TSP Log - 2025-09-22T13:37:00.081456
+Acceleration: 100.0 G
+Start Star: Sol
+==================================================
+
+--- Calculating legs from: Sol (Time: 0.00 y) ---
+  SUBMITTED: Sol -> Wolf 359
+  SUBMITTED: Sol -> Alpha Centauri
+  SUBMITTED: Sol -> Barnard's Star
+  SUBMITTED: Sol -> Proxima Centauri
+  SUBMITTED: Sol -> Sirius
+  COMPLETED: Sol -> Wolf 359. Sol Time: 8.20 y. Attempts: 7.  Total running time: 0:00:03.275710
+  COMPLETED: Sol -> Alpha Centauri. Sol Time: 4.51 y. Attempts: 7.  Total running time: 0:00:03.330974
+  COMPLETED: Sol -> Barnard's Star. Sol Time: 6.01 y. Attempts: 7.  Total running time: 0:00:03.418970
+  COMPLETED: Sol -> Proxima Centauri. Sol Time: 4.33 y. Attempts: 7.  Total running time: 0:00:03.470658
+  COMPLETED: Sol -> Sirius. Sol Time: 8.73 y. Attempts: 7.  Total running time: 0:00:03.513136
+
+>>> CHOSEN LEG: Sol -> Proxima Centauri
+
+--- Calculating legs from: Proxima Centauri (Time: 5.33 y) ---
+  SUBMITTED: Proxima Centauri -> Wolf 359
+  SUBMITTED: Proxima Centauri -> Alpha Centauri
+  SUBMITTED: Proxima Centauri -> Barnard's Star
+  SUBMITTED: Proxima Centauri -> Sirius
+  COMPLETED: Proxima Centauri -> Sirius. Sol Time: 11.31 y. Attempts: 7.  Total running time: 0:00:05.320659
+  COMPLETED: Proxima Centauri -> Barnard's Star. Sol Time: 6.71 y. Attempts: 7.  Total running time: 0:00:05.327932
+  COMPLETED: Proxima Centauri -> Wolf 359. Sol Time: 8.60 y. Attempts: 7.  Total running time: 0:00:05.346889
+
+==================================================
+Tour calculation interrupted by user.
