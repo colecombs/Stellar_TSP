@@ -246,8 +246,11 @@ def solve_gr_tsp_nearest_neighbor(stars, start_star: str, end_star: str, interme
 
     # --- Setup Log File ---
     script_dir = pathlib.Path(__file__).parent
+    logs_dir = script_dir / "logs"
+    logs_dir.mkdir(parents=True, exist_ok=True) # Create the /logs directory if it doesn't exist
+
     log_filename = f"gr_tsp_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-    log_filepath = script_dir / log_filename
+    log_filepath = logs_dir / log_filename
     print(f"\nLogging detailed output to: {log_filepath}")
 
     with open(log_filepath, 'w', encoding='utf-8') as log_file:
