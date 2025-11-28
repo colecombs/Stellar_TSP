@@ -1,0 +1,658 @@
+Stellar TSP Log - 2025-10-13T09:26:13.240776
+Acceleration: 10.0 G
+Start Star: Sol
+End Star: Sol
+==================================================
+
+
+--- Leg-by-Leg Analysis ---
+Leg                                    |   Distance (ly) |   Ship Time (y) |    Sol Time (y) |  Max Speed (%c)
+------------------------------------------------------------------------------------------------------------------------
+--- Calculating legs from: Sol (Time: 0.00 y) ---
+  SUBMITTED: Sol -> 70 Ophiuchi
+  SUBMITTED: Sol -> Ross 154
+  SUBMITTED: Sol -> Delta Pavonis
+  SUBMITTED: Sol -> Epsilon Eridani
+  SUBMITTED: Sol -> Epsilon Indi
+  SUBMITTED: Sol -> YZ Canis Minoris
+  SUBMITTED: Sol -> Barnard's Star
+  SUBMITTED: Sol -> Altair
+  SUBMITTED: Sol -> Sirius
+  SUBMITTED: Sol -> Kapteyn's Star
+  SUBMITTED: Sol -> 61 Cygni A
+  SUBMITTED: Sol -> Procyon
+  SUBMITTED: Sol -> Tau Ceti
+  SUBMITTED: Sol -> 82 G. Eridani
+  SUBMITTED: Sol -> Sigma Draconis
+  SUBMITTED: Sol -> Alpha Centauri
+  SUBMITTED: Sol -> Proxima Centauri
+  SUBMITTED: Sol -> Ross 47
+  SUBMITTED: Sol -> Eta Cassiopeiae
+Sol -> 70 Ophiuchi                     |           16.71 |            0.65 |       16.909466 |       99.994009
+  COMPLETED: Sol -> 70 Ophiuchi. Sol Time: 16.91 y. Attempts: 7.  Total running time: 0:00:02.620856
+Sol -> Ross 154                        |            9.71 |            0.61 |        9.910440 |       99.982746
+  COMPLETED: Sol -> Ross 154. Sol Time: 9.91 y. Attempts: 7.  Total running time: 0:00:02.662393
+Sol -> Epsilon Eridani                 |           10.48 |            0.62 |       10.680207 |       99.984390
+  COMPLETED: Sol -> Epsilon Eridani. Sol Time: 10.68 y. Attempts: 7.  Total running time: 0:00:04.191136
+Sol -> Delta Pavonis                   |           19.89 |            0.68 |       20.093919 |       99.995398
+  COMPLETED: Sol -> Delta Pavonis. Sol Time: 20.09 y. Attempts: 7.  Total running time: 0:00:04.413740
+Sol -> Epsilon Indi                    |           11.87 |            0.64 |       12.069736 |       99.987890
+  COMPLETED: Sol -> Epsilon Indi. Sol Time: 12.07 y. Attempts: 7.  Total running time: 0:00:05.587445
+Sol -> YZ Canis Minoris                |           19.53 |            0.67 |       19.737031 |       99.995533
+  COMPLETED: Sol -> YZ Canis Minoris. Sol Time: 19.74 y. Attempts: 7.  Total running time: 0:00:05.832181
+Sol -> Barnard's Star                  |            5.96 |            0.64 |        6.172651 |       99.952439
+  COMPLETED: Sol -> Barnard's Star. Sol Time: 6.17 y. Attempts: 7.  Total running time: 0:00:06.902164
+Sol -> Altair                          |           16.73 |            0.64 |       16.930843 |       99.993881
+  COMPLETED: Sol -> Altair. Sol Time: 16.93 y. Attempts: 7.  Total running time: 0:00:07.339690
+Sol -> Sirius                          |            8.71 |            0.62 |        8.915292 |       99.978928
+  COMPLETED: Sol -> Sirius. Sol Time: 8.92 y. Attempts: 7.  Total running time: 0:00:08.413136
+Sol -> Kapteyn's Star                  |           12.84 |            0.65 |       13.045871 |       99.988711
+  COMPLETED: Sol -> Kapteyn's Star. Sol Time: 13.05 y. Attempts: 7.  Total running time: 0:00:08.694735
+Sol -> 61 Cygni A                      |           11.40 |            0.64 |       11.606474 |       99.985911
+  COMPLETED: Sol -> 61 Cygni A. Sol Time: 11.61 y. Attempts: 7.  Total running time: 0:00:09.921130
+Sol -> Procyon                         |           11.46 |            0.62 |       11.666609 |       99.987775
+  COMPLETED: Sol -> Procyon. Sol Time: 11.67 y. Attempts: 7.  Total running time: 0:00:10.252020
+Sol -> Tau Ceti                        |           11.91 |            0.86 |       12.116680 |       99.987187
+  COMPLETED: Sol -> Tau Ceti. Sol Time: 12.12 y. Attempts: 7.  Total running time: 0:00:11.357584
+Sol -> 82 G. Eridani                   |           19.71 |            0.71 |       19.914440 |       99.995434
+  COMPLETED: Sol -> 82 G. Eridani. Sol Time: 19.91 y. Attempts: 7.  Total running time: 0:00:11.793026
+Sol -> Sigma Draconis                  |           18.80 |            0.75 |       19.007400 |       99.994654
+  COMPLETED: Sol -> Sigma Draconis. Sol Time: 19.01 y. Attempts: 7.  Total running time: 0:00:12.907109
+Sol -> Alpha Centauri                  |            4.34 |            0.55 |        4.551481 |       99.922125
+  COMPLETED: Sol -> Alpha Centauri. Sol Time: 4.55 y. Attempts: 7.  Total running time: 0:00:13.143850
+Sol -> Proxima Centauri                |            4.25 |            0.53 |        4.453213 |       99.921103
+  COMPLETED: Sol -> Proxima Centauri. Sol Time: 4.45 y. Attempts: 7.  Total running time: 0:00:14.261887
+Sol -> Ross 47                         |           18.90 |            0.69 |       19.098397 |       99.995199
+  COMPLETED: Sol -> Ross 47. Sol Time: 19.10 y. Attempts: 7.  Total running time: 0:00:14.749383
+Sol -> Eta Cassiopeiae                 |           19.33 |            0.70 |       19.535640 |       99.995026
+  COMPLETED: Sol -> Eta Cassiopeiae. Sol Time: 19.54 y. Attempts: 7.  Total running time: 0:00:15.855222
+
+>>> CHOSEN LEG: Sol -> Proxima Centauri
+
+--- Calculating legs from: Proxima Centauri (Time: 5.45 y) ---
+  SUBMITTED: Proxima Centauri -> 70 Ophiuchi
+  SUBMITTED: Proxima Centauri -> Ross 154
+  SUBMITTED: Proxima Centauri -> Delta Pavonis
+  SUBMITTED: Proxima Centauri -> Epsilon Eridani
+  SUBMITTED: Proxima Centauri -> Epsilon Indi
+  SUBMITTED: Proxima Centauri -> YZ Canis Minoris
+  SUBMITTED: Proxima Centauri -> Barnard's Star
+  SUBMITTED: Proxima Centauri -> Altair
+  SUBMITTED: Proxima Centauri -> Sirius
+  SUBMITTED: Proxima Centauri -> Kapteyn's Star
+  SUBMITTED: Proxima Centauri -> 61 Cygni A
+  SUBMITTED: Proxima Centauri -> Procyon
+  SUBMITTED: Proxima Centauri -> Tau Ceti
+  SUBMITTED: Proxima Centauri -> 82 G. Eridani
+  SUBMITTED: Proxima Centauri -> Sigma Draconis
+  SUBMITTED: Proxima Centauri -> Alpha Centauri
+  SUBMITTED: Proxima Centauri -> Ross 47
+  SUBMITTED: Proxima Centauri -> Eta Cassiopeiae
+Proxima Centauri -> 70 Ophiuchi        |           16.26 |            0.66 |       16.462179 |       99.993565
+  COMPLETED: Proxima Centauri -> 70 Ophiuchi. Sol Time: 16.46 y. Attempts: 7.  Total running time: 0:00:16.857229
+Proxima Centauri -> Ross 154           |            8.25 |            0.53 |        8.449479 |       99.979355
+  COMPLETED: Proxima Centauri -> Ross 154. Sol Time: 8.45 y. Attempts: 7.  Total running time: 0:00:17.154778
+Proxima Centauri -> Delta Pavonis      |           16.54 |            0.69 |       16.743523 |       99.994003
+  COMPLETED: Proxima Centauri -> Delta Pavonis. Sol Time: 16.74 y. Attempts: 7.  Total running time: 0:00:17.838262
+Proxima Centauri -> Epsilon Eridani    |           12.39 |            0.70 |       12.598815 |       99.987291
+  COMPLETED: Proxima Centauri -> Epsilon Eridani. Sol Time: 12.60 y. Attempts: 7.  Total running time: 0:00:18.209132
+Proxima Centauri -> Epsilon Indi       |            9.69 |            0.60 |        9.898405 |       99.983889
+  COMPLETED: Proxima Centauri -> Epsilon Indi. Sol Time: 9.90 y. Attempts: 7.  Total running time: 0:00:19.023448
+Proxima Centauri -> YZ Canis Minoris   |           20.58 |            0.67 |       20.783951 |       99.995826
+  COMPLETED: Proxima Centauri -> YZ Canis Minoris. Sol Time: 20.78 y. Attempts: 7.  Total running time: 0:00:19.457068
+Proxima Centauri -> Barnard's Star     |            6.56 |            0.60 |        6.764907 |       99.966062
+  COMPLETED: Proxima Centauri -> Barnard's Star. Sol Time: 6.76 y. Attempts: 7.  Total running time: 0:00:20.023970
+Proxima Centauri -> Altair             |           17.51 |            0.65 |       17.707821 |       99.994349
+  COMPLETED: Proxima Centauri -> Altair. Sol Time: 17.71 y. Attempts: 7.  Total running time: 0:00:20.521175
+Proxima Centauri -> Sirius             |           11.27 |            0.62 |       11.477626 |       99.987267
+  COMPLETED: Proxima Centauri -> Sirius. Sol Time: 11.48 y. Attempts: 7.  Total running time: 0:00:21.206939
+Proxima Centauri -> Kapteyn's Star     |           11.89 |            0.66 |       12.093864 |       99.987912
+  COMPLETED: Proxima Centauri -> Kapteyn's Star. Sol Time: 12.09 y. Attempts: 7.  Total running time: 0:00:21.526642
+Proxima Centauri -> 61 Cygni A         |           14.40 |            0.81 |       14.616608 |       99.989883
+  COMPLETED: Proxima Centauri -> 61 Cygni A. Sol Time: 14.62 y. Attempts: 7.  Total running time: 0:00:22.332659
+Proxima Centauri -> Procyon            |           12.92 |            0.71 |       13.130927 |       99.988733
+  COMPLETED: Proxima Centauri -> Procyon. Sol Time: 13.13 y. Attempts: 7.  Total running time: 0:00:22.729238
+Proxima Centauri -> Tau Ceti           |           13.38 |            0.69 |       13.584938 |       99.990996
+  COMPLETED: Proxima Centauri -> Tau Ceti. Sol Time: 13.58 y. Attempts: 7.  Total running time: 0:00:23.433788
+Proxima Centauri -> 82 G. Eridani      |           18.97 |            0.71 |       19.173416 |       99.994865
+  COMPLETED: Proxima Centauri -> 82 G. Eridani. Sol Time: 19.17 y. Attempts: 7.  Total running time: 0:00:23.820899
+Proxima Centauri -> Sigma Draconis     |           22.32 |            0.69 |       22.523069 |       99.996554
+  COMPLETED: Proxima Centauri -> Sigma Draconis. Sol Time: 22.52 y. Attempts: 7.  Total running time: 0:00:24.633354
+Proxima Centauri -> Alpha Centauri     |            0.19 |            0.26 |        0.368226 |       92.424796
+  COMPLETED: Proxima Centauri -> Alpha Centauri. Sol Time: 0.37 y. Attempts: 7.  Total running time: 0:00:24.657799
+Proxima Centauri -> Ross 47            |           20.94 |            0.63 |       21.139480 |       99.995830
+  COMPLETED: Proxima Centauri -> Ross 47. Sol Time: 21.14 y. Attempts: 7.  Total running time: 0:00:25.966469
+Proxima Centauri -> Eta Cassiopeiae    |           23.49 |            0.67 |       23.686241 |       99.996942
+  COMPLETED: Proxima Centauri -> Eta Cassiopeiae. Sol Time: 23.69 y. Attempts: 7.  Total running time: 0:00:26.044168
+
+>>> CHOSEN LEG: Proxima Centauri -> Alpha Centauri
+
+--- Calculating legs from: Alpha Centauri (Time: 6.82 y) ---
+  SUBMITTED: Alpha Centauri -> 70 Ophiuchi
+  SUBMITTED: Alpha Centauri -> Ross 154
+  SUBMITTED: Alpha Centauri -> Delta Pavonis
+  SUBMITTED: Alpha Centauri -> Epsilon Eridani
+  SUBMITTED: Alpha Centauri -> Epsilon Indi
+  SUBMITTED: Alpha Centauri -> YZ Canis Minoris
+  SUBMITTED: Alpha Centauri -> Barnard's Star
+  SUBMITTED: Alpha Centauri -> Altair
+  SUBMITTED: Alpha Centauri -> Sirius
+  SUBMITTED: Alpha Centauri -> Kapteyn's Star
+  SUBMITTED: Alpha Centauri -> 61 Cygni A
+  SUBMITTED: Alpha Centauri -> Procyon
+  SUBMITTED: Alpha Centauri -> Tau Ceti
+  SUBMITTED: Alpha Centauri -> 82 G. Eridani
+  SUBMITTED: Alpha Centauri -> Sigma Draconis
+  SUBMITTED: Alpha Centauri -> Ross 47
+  SUBMITTED: Alpha Centauri -> Eta Cassiopeiae
+Alpha Centauri -> Ross 154             |            8.12 |            0.66 |        8.333437 |       99.971538
+  COMPLETED: Alpha Centauri -> Ross 154. Sol Time: 8.33 y. Attempts: 7.  Total running time: 0:00:26.940851
+Alpha Centauri -> 70 Ophiuchi          |           16.11 |            0.70 |       16.313581 |       99.993606
+  COMPLETED: Alpha Centauri -> 70 Ophiuchi. Sol Time: 16.31 y. Attempts: 7.  Total running time: 0:00:27.080300
+Alpha Centauri -> Delta Pavonis        |           16.49 |            0.63 |       16.692264 |       99.993427
+  COMPLETED: Alpha Centauri -> Delta Pavonis. Sol Time: 16.69 y. Attempts: 7.  Total running time: 0:00:27.978502
+Alpha Centauri -> Epsilon Eridani      |           12.57 |            0.66 |       12.780036 |       99.988588
+  COMPLETED: Alpha Centauri -> Epsilon Eridani. Sol Time: 12.78 y. Attempts: 7.  Total running time: 0:00:28.107289
+Alpha Centauri -> Epsilon Indi         |            9.70 |            0.62 |        9.909792 |       99.981684
+  COMPLETED: Alpha Centauri -> Epsilon Indi. Sol Time: 9.91 y. Attempts: 7.  Total running time: 0:00:29.095664
+Alpha Centauri -> YZ Canis Minoris     |           20.72 |            0.69 |       20.921551 |       99.995921
+  COMPLETED: Alpha Centauri -> YZ Canis Minoris. Sol Time: 20.92 y. Attempts: 7.  Total running time: 0:00:29.355519
+Alpha Centauri -> Barnard's Star       |            6.46 |            0.59 |        6.671562 |       99.958512
+  COMPLETED: Alpha Centauri -> Barnard's Star. Sol Time: 6.67 y. Attempts: 7.  Total running time: 0:00:30.059509
+Alpha Centauri -> Altair               |           17.42 |            0.79 |       17.630867 |       99.993234
+  COMPLETED: Alpha Centauri -> Altair. Sol Time: 17.63 y. Attempts: 7.  Total running time: 0:00:30.578216
+Alpha Centauri -> Sirius               |           11.43 |            0.67 |       11.635890 |       99.986425
+  COMPLETED: Alpha Centauri -> Sirius. Sol Time: 11.64 y. Attempts: 7.  Total running time: 0:00:31.183926
+Alpha Centauri -> Kapteyn's Star       |           12.05 |            0.62 |       12.252991 |       99.988195
+  COMPLETED: Alpha Centauri -> Kapteyn's Star. Sol Time: 12.25 y. Attempts: 7.  Total running time: 0:00:31.598384
+Alpha Centauri -> 61 Cygni A           |           14.40 |            0.58 |       14.602890 |       99.992739
+  COMPLETED: Alpha Centauri -> 61 Cygni A. Sol Time: 14.60 y. Attempts: 7.  Total running time: 0:00:32.256120
+Alpha Centauri -> Procyon              |           13.07 |            0.64 |       13.270970 |       99.989220
+  COMPLETED: Alpha Centauri -> Procyon. Sol Time: 13.27 y. Attempts: 7.  Total running time: 0:00:32.671667
+Alpha Centauri -> Tau Ceti             |           13.53 |            0.77 |       13.738163 |       99.988839
+  COMPLETED: Alpha Centauri -> Tau Ceti. Sol Time: 13.74 y. Attempts: 7.  Total running time: 0:00:33.273515
+Alpha Centauri -> 82 G. Eridani        |           19.11 |            0.67 |       19.316634 |       99.995614
+  COMPLETED: Alpha Centauri -> 82 G. Eridani. Sol Time: 19.32 y. Attempts: 7.  Total running time: 0:00:33.625884
+Alpha Centauri -> Sigma Draconis       |           22.32 |            0.69 |       22.520738 |       99.996751
+  COMPLETED: Alpha Centauri -> Sigma Draconis. Sol Time: 22.52 y. Attempts: 7.  Total running time: 0:00:34.434080
+Alpha Centauri -> Ross 47              |           21.12 |            0.59 |       21.320073 |       99.996554
+  COMPLETED: Alpha Centauri -> Ross 47. Sol Time: 21.32 y. Attempts: 7.  Total running time: 0:00:34.925508
+Alpha Centauri -> Eta Cassiopeiae      |           23.57 |            0.73 |       23.769401 |       99.996769
+  COMPLETED: Alpha Centauri -> Eta Cassiopeiae. Sol Time: 23.77 y. Attempts: 7.  Total running time: 0:00:35.502281
+
+>>> CHOSEN LEG: Alpha Centauri -> Barnard's Star
+
+--- Calculating legs from: Barnard's Star (Time: 14.49 y) ---
+  SUBMITTED: Barnard's Star -> 70 Ophiuchi
+  SUBMITTED: Barnard's Star -> Ross 154
+  SUBMITTED: Barnard's Star -> Delta Pavonis
+  SUBMITTED: Barnard's Star -> Epsilon Eridani
+  SUBMITTED: Barnard's Star -> Epsilon Indi
+  SUBMITTED: Barnard's Star -> YZ Canis Minoris
+  SUBMITTED: Barnard's Star -> Altair
+  SUBMITTED: Barnard's Star -> Sirius
+  SUBMITTED: Barnard's Star -> Kapteyn's Star
+  SUBMITTED: Barnard's Star -> 61 Cygni A
+  SUBMITTED: Barnard's Star -> Procyon
+  SUBMITTED: Barnard's Star -> Tau Ceti
+  SUBMITTED: Barnard's Star -> 82 G. Eridani
+  SUBMITTED: Barnard's Star -> Sigma Draconis
+  SUBMITTED: Barnard's Star -> Ross 47
+  SUBMITTED: Barnard's Star -> Eta Cassiopeiae
+Barnard's Star -> Ross 154             |            5.55 |            0.55 |        5.758790 |       99.951434
+  COMPLETED: Barnard's Star -> Ross 154. Sol Time: 5.76 y. Attempts: 7.  Total running time: 0:00:36.327633
+Barnard's Star -> 70 Ophiuchi          |           10.76 |            0.64 |       10.967524 |       99.984254
+  COMPLETED: Barnard's Star -> 70 Ophiuchi. Sol Time: 10.97 y. Attempts: 7.  Total running time: 0:00:36.490355
+Barnard's Star -> Delta Pavonis        |           19.20 |            0.74 |       19.409087 |       99.995352
+  COMPLETED: Barnard's Star -> Delta Pavonis. Sol Time: 19.41 y. Attempts: 7.  Total running time: 0:00:37.413521
+Barnard's Star -> Epsilon Eridani      |           15.68 |            0.64 |       15.885156 |       99.993686
+  COMPLETED: Barnard's Star -> Epsilon Eridani. Sol Time: 15.89 y. Attempts: 7.  Total running time: 0:00:37.517038
+Barnard's Star -> Epsilon Indi         |           12.21 |            0.64 |       12.415363 |       99.988472
+  COMPLETED: Barnard's Star -> Epsilon Indi. Sol Time: 12.42 y. Attempts: 7.  Total running time: 0:00:38.363668
+Barnard's Star -> YZ Canis Minoris     |           24.96 |            0.61 |       25.154621 |       99.997572
+  COMPLETED: Barnard's Star -> YZ Canis Minoris. Sol Time: 25.15 y. Attempts: 7.  Total running time: 0:00:38.695123
+Barnard's Star -> Altair               |           11.83 |            0.67 |       12.033863 |       99.987020
+  COMPLETED: Barnard's Star -> Altair. Sol Time: 12.03 y. Attempts: 7.  Total running time: 0:00:39.357773
+Barnard's Star -> Sirius               |           14.35 |            0.68 |       14.551349 |       99.991082
+  COMPLETED: Barnard's Star -> Sirius. Sol Time: 14.55 y. Attempts: 7.  Total running time: 0:00:39.672366
+Barnard's Star -> Kapteyn's Star       |           17.76 |            0.70 |       17.964280 |       99.993823
+  COMPLETED: Barnard's Star -> Kapteyn's Star. Sol Time: 17.96 y. Attempts: 7.  Total running time: 0:00:40.564459
+Barnard's Star -> 61 Cygni A           |            9.32 |            0.78 |        9.535320 |       99.977068
+  COMPLETED: Barnard's Star -> 61 Cygni A. Sol Time: 9.54 y. Attempts: 7.  Total running time: 0:00:40.769549
+Barnard's Star -> Procyon              |           16.98 |            0.73 |       17.187520 |       99.993819
+  COMPLETED: Barnard's Star -> Procyon. Sol Time: 17.19 y. Attempts: 7.  Total running time: 0:00:41.639516
+Barnard's Star -> Tau Ceti             |           15.54 |            0.64 |       15.737943 |       99.992950
+  COMPLETED: Barnard's Star -> Tau Ceti. Sol Time: 15.74 y. Attempts: 7.  Total running time: 0:00:41.734743
+Barnard's Star -> 82 G. Eridani        |           23.87 |            0.67 |       24.066101 |       99.997055
+  COMPLETED: Barnard's Star -> 82 G. Eridani. Sol Time: 24.07 y. Attempts: 7.  Total running time: 0:00:42.761641
+Barnard's Star -> Sigma Draconis       |           17.34 |            0.98 |       17.611658 |       99.993276
+  COMPLETED: Barnard's Star -> Sigma Draconis. Sol Time: 17.61 y. Attempts: 7.  Total running time: 0:00:42.795831
+Barnard's Star -> Eta Cassiopeiae      |           20.50 |            0.70 |       20.705148 |       99.996035
+  COMPLETED: Barnard's Star -> Eta Cassiopeiae. Sol Time: 20.71 y. Attempts: 7.  Total running time: 0:00:43.732226
+Barnard's Star -> Ross 47              |           24.77 |            0.72 |       24.975908 |       99.997083
+  COMPLETED: Barnard's Star -> Ross 47. Sol Time: 24.98 y. Attempts: 7.  Total running time: 0:00:43.867234
+
+>>> CHOSEN LEG: Barnard's Star -> Ross 154
+
+--- Calculating legs from: Ross 154 (Time: 21.25 y) ---
+  SUBMITTED: Ross 154 -> 70 Ophiuchi
+  SUBMITTED: Ross 154 -> Delta Pavonis
+  SUBMITTED: Ross 154 -> Epsilon Eridani
+  SUBMITTED: Ross 154 -> Epsilon Indi
+  SUBMITTED: Ross 154 -> YZ Canis Minoris
+  SUBMITTED: Ross 154 -> Altair
+  SUBMITTED: Ross 154 -> Sirius
+  SUBMITTED: Ross 154 -> Kapteyn's Star
+  SUBMITTED: Ross 154 -> 61 Cygni A
+  SUBMITTED: Ross 154 -> Procyon
+  SUBMITTED: Ross 154 -> Tau Ceti
+  SUBMITTED: Ross 154 -> 82 G. Eridani
+  SUBMITTED: Ross 154 -> Sigma Draconis
+  SUBMITTED: Ross 154 -> Ross 47
+  SUBMITTED: Ross 154 -> Eta Cassiopeiae
+Ross 154 -> Delta Pavonis              |           14.59 |            0.64 |       14.790049 |       99.991789
+  COMPLETED: Ross 154 -> Delta Pavonis. Sol Time: 14.79 y. Attempts: 7.  Total running time: 0:00:44.901692
+Ross 154 -> 70 Ophiuchi                |            9.39 |            0.63 |        9.597122 |       99.981780
+  COMPLETED: Ross 154 -> 70 Ophiuchi. Sol Time: 9.60 y. Attempts: 7.  Total running time: 0:00:44.960291
+Ross 154 -> Epsilon Eridani            |           17.61 |            0.69 |       17.818373 |       99.993741
+  COMPLETED: Ross 154 -> Epsilon Eridani. Sol Time: 17.82 y. Attempts: 7.  Total running time: 0:00:45.912193
+Ross 154 -> Epsilon Indi               |            8.97 |            0.62 |        9.179153 |       99.979947
+  COMPLETED: Ross 154 -> Epsilon Indi. Sol Time: 9.18 y. Attempts: 7.  Total running time: 0:00:46.032165
+Ross 154 -> YZ Canis Minoris           |           28.67 |            0.64 |       28.865237 |       99.997795
+  COMPLETED: Ross 154 -> YZ Canis Minoris. Sol Time: 28.87 y. Attempts: 7.  Total running time: 0:00:46.910328
+Ross 154 -> Altair                     |           10.54 |            0.63 |       10.746300 |       99.985409
+  COMPLETED: Ross 154 -> Altair. Sol Time: 10.75 y. Attempts: 7.  Total running time: 0:00:47.166040
+Ross 154 -> Sirius                     |           18.38 |            0.63 |       18.578991 |       99.994699
+  COMPLETED: Ross 154 -> Sirius. Sol Time: 18.58 y. Attempts: 7.  Total running time: 0:00:47.967324
+Ross 154 -> Kapteyn's Star             |           18.30 |            0.99 |       18.516587 |       99.994056
+  COMPLETED: Ross 154 -> Kapteyn's Star. Sol Time: 18.52 y. Attempts: 7.  Total running time: 0:00:48.309054
+Ross 154 -> 61 Cygni A                 |           12.24 |            0.65 |       12.441997 |       99.988415
+  COMPLETED: Ross 154 -> 61 Cygni A. Sol Time: 12.44 y. Attempts: 7.  Total running time: 0:00:48.915109
+Ross 154 -> Procyon                    |           20.78 |            0.64 |       20.978802 |       99.996439
+  COMPLETED: Ross 154 -> Procyon. Sol Time: 20.98 y. Attempts: 7.  Total running time: 0:00:49.267373
+Ross 154 -> Tau Ceti                   |           16.06 |            0.75 |       16.271052 |       99.992650
+  COMPLETED: Ross 154 -> Tau Ceti. Sol Time: 16.27 y. Attempts: 7.  Total running time: 0:00:49.958249
+Ross 154 -> 82 G. Eridani              |           23.09 |            0.67 |       23.293996 |       99.996666
+  COMPLETED: Ross 154 -> 82 G. Eridani. Sol Time: 23.29 y. Attempts: 7.  Total running time: 0:00:50.610552
+Ross 154 -> Sigma Draconis             |           21.72 |            0.72 |       21.926884 |       99.995830
+  COMPLETED: Ross 154 -> Sigma Draconis. Sol Time: 21.93 y. Attempts: 7.  Total running time: 0:00:51.019151
+Ross 154 -> Ross 47                    |           28.04 |            0.99 |       28.255645 |       99.997397
+  COMPLETED: Ross 154 -> Ross 47. Sol Time: 28.26 y. Attempts: 7.  Total running time: 0:00:51.745627
+Ross 154 -> Eta Cassiopeiae            |           24.41 |            0.68 |       24.609358 |       99.996961
+  COMPLETED: Ross 154 -> Eta Cassiopeiae. Sol Time: 24.61 y. Attempts: 7.  Total running time: 0:00:52.148154
+
+>>> CHOSEN LEG: Ross 154 -> Epsilon Indi
+
+--- Calculating legs from: Epsilon Indi (Time: 31.43 y) ---
+  SUBMITTED: Epsilon Indi -> 70 Ophiuchi
+  SUBMITTED: Epsilon Indi -> Delta Pavonis
+  SUBMITTED: Epsilon Indi -> Epsilon Eridani
+  SUBMITTED: Epsilon Indi -> YZ Canis Minoris
+  SUBMITTED: Epsilon Indi -> Altair
+  SUBMITTED: Epsilon Indi -> Sirius
+  SUBMITTED: Epsilon Indi -> Kapteyn's Star
+  SUBMITTED: Epsilon Indi -> 61 Cygni A
+  SUBMITTED: Epsilon Indi -> Procyon
+  SUBMITTED: Epsilon Indi -> Tau Ceti
+  SUBMITTED: Epsilon Indi -> 82 G. Eridani
+  SUBMITTED: Epsilon Indi -> Sigma Draconis
+  SUBMITTED: Epsilon Indi -> Ross 47
+  SUBMITTED: Epsilon Indi -> Eta Cassiopeiae
+Epsilon Indi -> 70 Ophiuchi            |           18.01 |            0.68 |       18.209292 |       99.994396
+  COMPLETED: Epsilon Indi -> 70 Ophiuchi. Sol Time: 18.21 y. Attempts: 7.  Total running time: 0:00:53.203391
+Epsilon Indi -> Delta Pavonis          |            9.14 |            0.60 |        9.343627 |       99.980590
+  COMPLETED: Epsilon Indi -> Delta Pavonis. Sol Time: 9.34 y. Attempts: 7.  Total running time: 0:00:53.237510
+Epsilon Indi -> Epsilon Eridani        |           14.09 |            0.69 |       14.293083 |       99.990579
+  COMPLETED: Epsilon Indi -> Epsilon Eridani. Sol Time: 14.29 y. Attempts: 7.  Total running time: 0:00:54.360997
+Epsilon Indi -> YZ Canis Minoris       |           27.47 |            0.80 |       27.676959 |       99.997347
+  COMPLETED: Epsilon Indi -> YZ Canis Minoris. Sol Time: 27.68 y. Attempts: 7.  Total running time: 0:00:54.447110
+Epsilon Indi -> Altair                 |           17.09 |            0.58 |       17.288347 |       99.995079
+  COMPLETED: Epsilon Indi -> Altair. Sol Time: 17.29 y. Attempts: 7.  Total running time: 0:00:55.306303
+Epsilon Indi -> Sirius                 |           18.34 |            0.66 |       18.545487 |       99.995284
+  COMPLETED: Epsilon Indi -> Sirius. Sol Time: 18.55 y. Attempts: 7.  Total running time: 0:00:55.587607
+Epsilon Indi -> Kapteyn's Star         |           12.65 |            0.77 |       12.863883 |       99.987428
+  COMPLETED: Epsilon Indi -> Kapteyn's Star. Sol Time: 12.86 y. Attempts: 7.  Total running time: 0:00:56.376540
+Epsilon Indi -> 61 Cygni A             |           17.33 |            0.68 |       17.534327 |       99.993599
+  COMPLETED: Epsilon Indi -> 61 Cygni A. Sol Time: 17.53 y. Attempts: 7.  Total running time: 0:00:56.514501
+Epsilon Indi -> Procyon                |           20.31 |            0.74 |       20.519185 |       99.995318
+  COMPLETED: Epsilon Indi -> Procyon. Sol Time: 20.52 y. Attempts: 7.  Total running time: 0:00:57.371204
+Epsilon Indi -> Tau Ceti               |           11.52 |            0.66 |       11.721919 |       99.987066
+  COMPLETED: Epsilon Indi -> Tau Ceti. Sol Time: 11.72 y. Attempts: 7.  Total running time: 0:00:57.551524
+Epsilon Indi -> 82 G. Eridani          |           15.07 |            0.72 |       15.273451 |       99.991584
+  COMPLETED: Epsilon Indi -> 82 G. Eridani. Sol Time: 15.27 y. Attempts: 7.  Total running time: 0:00:58.335589
+Epsilon Indi -> Sigma Draconis         |           27.88 |            0.70 |       28.079337 |       99.997904
+  COMPLETED: Epsilon Indi -> Sigma Draconis. Sol Time: 28.08 y. Attempts: 7.  Total running time: 0:00:58.735969
+Epsilon Indi -> Ross 47                |           25.26 |            0.60 |       25.459920 |       99.997688
+  COMPLETED: Epsilon Indi -> Ross 47. Sol Time: 25.46 y. Attempts: 7.  Total running time: 0:00:59.428398
+Epsilon Indi -> Eta Cassiopeiae        |           27.18 |            0.65 |       27.384232 |       99.997613
+  COMPLETED: Epsilon Indi -> Eta Cassiopeiae. Sol Time: 27.38 y. Attempts: 7.  Total running time: 0:00:59.942466
+
+>>> CHOSEN LEG: Epsilon Indi -> Delta Pavonis
+
+--- Calculating legs from: Delta Pavonis (Time: 41.77 y) ---
+  SUBMITTED: Delta Pavonis -> 70 Ophiuchi
+  SUBMITTED: Delta Pavonis -> Epsilon Eridani
+  SUBMITTED: Delta Pavonis -> YZ Canis Minoris
+  SUBMITTED: Delta Pavonis -> Altair
+  SUBMITTED: Delta Pavonis -> Sirius
+  SUBMITTED: Delta Pavonis -> Kapteyn's Star
+  SUBMITTED: Delta Pavonis -> 61 Cygni A
+  SUBMITTED: Delta Pavonis -> Procyon
+  SUBMITTED: Delta Pavonis -> Tau Ceti
+  SUBMITTED: Delta Pavonis -> 82 G. Eridani
+  SUBMITTED: Delta Pavonis -> Sigma Draconis
+  SUBMITTED: Delta Pavonis -> Ross 47
+  SUBMITTED: Delta Pavonis -> Eta Cassiopeiae
+Delta Pavonis -> Epsilon Eridani       |           22.41 |            0.64 |       22.612674 |       99.996940
+  COMPLETED: Delta Pavonis -> Epsilon Eridani. Sol Time: 22.61 y. Attempts: 7.  Total running time: 0:01:01.172982
+Delta Pavonis -> 70 Ophiuchi           |           21.69 |            0.67 |       21.896026 |       99.996247
+  COMPLETED: Delta Pavonis -> 70 Ophiuchi. Sol Time: 21.90 y. Attempts: 7.  Total running time: 0:01:01.324351
+Delta Pavonis -> YZ Canis Minoris      |           33.66 |            0.74 |       33.862440 |       99.998439
+  COMPLETED: Delta Pavonis -> YZ Canis Minoris. Sol Time: 33.86 y. Attempts: 7.  Total running time: 0:01:02.423624
+Delta Pavonis -> Altair                |           22.46 |            0.71 |       22.662639 |       99.996533
+  COMPLETED: Delta Pavonis -> Altair. Sol Time: 22.66 y. Attempts: 7.  Total running time: 0:01:02.666409
+Delta Pavonis -> Sirius                |           26.22 |            0.72 |       26.426067 |       99.997400
+  COMPLETED: Delta Pavonis -> Sirius. Sol Time: 26.43 y. Attempts: 7.  Total running time: 0:01:03.703144
+Delta Pavonis -> Kapteyn's Star        |           18.28 |            0.63 |       18.482939 |       99.995000
+  COMPLETED: Delta Pavonis -> Kapteyn's Star. Sol Time: 18.48 y. Attempts: 7.  Total running time: 0:01:03.841874
+Delta Pavonis -> 61 Cygni A            |           25.44 |            0.88 |       25.645179 |       99.996971
+  COMPLETED: Delta Pavonis -> 61 Cygni A. Sol Time: 25.65 y. Attempts: 7.  Total running time: 0:01:04.992140
+Delta Pavonis -> Procyon               |           27.33 |            0.70 |       27.528428 |       99.997502
+  COMPLETED: Delta Pavonis -> Procyon. Sol Time: 27.53 y. Attempts: 7.  Total running time: 0:01:05.029925
+Delta Pavonis -> Tau Ceti              |           19.97 |            0.78 |       20.173611 |       99.994986
+  COMPLETED: Delta Pavonis -> Tau Ceti. Sol Time: 20.17 y. Attempts: 7.  Total running time: 0:01:05.943658
+Delta Pavonis -> 82 G. Eridani         |           19.12 |            0.63 |       19.319868 |       99.995789
+  COMPLETED: Delta Pavonis -> 82 G. Eridani. Sol Time: 19.32 y. Attempts: 7.  Total running time: 0:01:05.995209
+Delta Pavonis -> Sigma Draconis        |           35.87 |            0.70 |       36.072426 |       99.998562
+  COMPLETED: Delta Pavonis -> Sigma Draconis. Sol Time: 36.07 y. Attempts: 7.  Total running time: 0:01:06.925792
+Delta Pavonis -> Ross 47               |           32.64 |            0.90 |       32.850551 |       99.998275
+  COMPLETED: Delta Pavonis -> Ross 47. Sol Time: 32.85 y. Attempts: 7.  Total running time: 0:01:07.095634
+Delta Pavonis -> Eta Cassiopeiae       |           36.17 |            0.73 |       36.372748 |       99.998652
+  COMPLETED: Delta Pavonis -> Eta Cassiopeiae. Sol Time: 36.37 y. Attempts: 7.  Total running time: 0:01:08.019820
+
+>>> CHOSEN LEG: Delta Pavonis -> Kapteyn's Star
+
+--- Calculating legs from: Kapteyn's Star (Time: 61.26 y) ---
+  SUBMITTED: Kapteyn's Star -> 70 Ophiuchi
+  SUBMITTED: Kapteyn's Star -> Epsilon Eridani
+  SUBMITTED: Kapteyn's Star -> YZ Canis Minoris
+  SUBMITTED: Kapteyn's Star -> Altair
+  SUBMITTED: Kapteyn's Star -> Sirius
+  SUBMITTED: Kapteyn's Star -> 61 Cygni A
+  SUBMITTED: Kapteyn's Star -> Procyon
+  SUBMITTED: Kapteyn's Star -> Tau Ceti
+  SUBMITTED: Kapteyn's Star -> 82 G. Eridani
+  SUBMITTED: Kapteyn's Star -> Sigma Draconis
+  SUBMITTED: Kapteyn's Star -> Ross 47
+  SUBMITTED: Kapteyn's Star -> Eta Cassiopeiae
+Kapteyn's Star -> 70 Ophiuchi          |           27.45 |            0.70 |       27.649054 |       99.997672
+  COMPLETED: Kapteyn's Star -> 70 Ophiuchi. Sol Time: 27.65 y. Attempts: 7.  Total running time: 0:01:09.103923
+Kapteyn's Star -> Epsilon Eridani      |            8.59 |            0.62 |        8.793123 |       99.979296
+  COMPLETED: Kapteyn's Star -> Epsilon Eridani. Sol Time: 8.79 y. Attempts: 7.  Total running time: 0:01:09.257537
+Kapteyn's Star -> YZ Canis Minoris     |           17.06 |            0.65 |       17.257508 |       99.993670
+  COMPLETED: Kapteyn's Star -> YZ Canis Minoris. Sol Time: 17.26 y. Attempts: 7.  Total running time: 0:01:10.307990
+Kapteyn's Star -> Altair               |           26.90 |            0.73 |       27.106744 |       99.997468
+  COMPLETED: Kapteyn's Star -> Altair. Sol Time: 27.11 y. Attempts: 7.  Total running time: 0:01:10.660968
+Kapteyn's Star -> Sirius               |           12.17 |            0.63 |       12.372472 |       99.989059
+  COMPLETED: Kapteyn's Star -> Sirius. Sol Time: 12.37 y. Attempts: 7.  Total running time: 0:01:11.492226
+Kapteyn's Star -> 61 Cygni A           |           22.57 |            0.72 |       22.773049 |       99.996750
+  COMPLETED: Kapteyn's Star -> 61 Cygni A. Sol Time: 22.77 y. Attempts: 7.  Total running time: 0:01:12.079916
+Kapteyn's Star -> Procyon              |           12.25 |            0.66 |       12.455806 |       99.987951
+  COMPLETED: Kapteyn's Star -> Procyon. Sol Time: 12.46 y. Attempts: 7.  Total running time: 0:01:12.621061
+Kapteyn's Star -> Tau Ceti             |           10.96 |            0.63 |       11.162160 |       99.986423
+  COMPLETED: Kapteyn's Star -> Tau Ceti. Sol Time: 11.16 y. Attempts: 7.  Total running time: 0:01:13.260313
+Kapteyn's Star -> 82 G. Eridani        |            8.82 |            0.63 |        9.028313 |       99.977751
+  COMPLETED: Kapteyn's Star -> 82 G. Eridani. Sol Time: 9.03 y. Attempts: 7.  Total running time: 0:01:13.675140
+Kapteyn's Star -> Sigma Draconis       |           30.64 |            0.98 |       30.857917 |       99.997668
+  COMPLETED: Kapteyn's Star -> Sigma Draconis. Sol Time: 30.86 y. Attempts: 7.  Total running time: 0:01:14.509904
+Kapteyn's Star -> Ross 47              |           14.81 |            0.63 |       15.010362 |       99.992141
+  COMPLETED: Kapteyn's Star -> Ross 47. Sol Time: 15.01 y. Attempts: 7.  Total running time: 0:01:14.717675
+Kapteyn's Star -> Eta Cassiopeiae      |           27.59 |            0.70 |       27.794315 |       99.997686
+  COMPLETED: Kapteyn's Star -> Eta Cassiopeiae. Sol Time: 27.79 y. Attempts: 7.  Total running time: 0:01:15.550991
+
+>>> CHOSEN LEG: Kapteyn's Star -> Epsilon Eridani
+
+--- Calculating legs from: Epsilon Eridani (Time: 71.05 y) ---
+  SUBMITTED: Epsilon Eridani -> 70 Ophiuchi
+  SUBMITTED: Epsilon Eridani -> YZ Canis Minoris
+  SUBMITTED: Epsilon Eridani -> Altair
+  SUBMITTED: Epsilon Eridani -> Sirius
+  SUBMITTED: Epsilon Eridani -> 61 Cygni A
+  SUBMITTED: Epsilon Eridani -> Procyon
+  SUBMITTED: Epsilon Eridani -> Tau Ceti
+  SUBMITTED: Epsilon Eridani -> 82 G. Eridani
+  SUBMITTED: Epsilon Eridani -> Sigma Draconis
+  SUBMITTED: Epsilon Eridani -> Ross 47
+  SUBMITTED: Epsilon Eridani -> Eta Cassiopeiae
+Epsilon Eridani -> YZ Canis Minoris    |           17.68 |            0.63 |       17.876807 |       99.994458
+  COMPLETED: Epsilon Eridani -> YZ Canis Minoris. Sol Time: 17.88 y. Attempts: 7.  Total running time: 0:01:16.579015
+Epsilon Eridani -> 70 Ophiuchi         |           25.74 |            0.84 |       25.951356 |       99.996789
+  COMPLETED: Epsilon Eridani -> 70 Ophiuchi. Sol Time: 25.95 y. Attempts: 7.  Total running time: 0:01:16.789018
+Epsilon Eridani -> Altair              |           23.35 |            0.75 |       23.557823 |       99.996509
+  COMPLETED: Epsilon Eridani -> Altair. Sol Time: 23.56 y. Attempts: 7.  Total running time: 0:01:17.757427
+Epsilon Eridani -> Sirius              |            8.89 |            0.60 |        9.093483 |       99.979179
+  COMPLETED: Epsilon Eridani -> Sirius. Sol Time: 9.09 y. Attempts: 7.  Total running time: 0:01:18.381853
+Epsilon Eridani -> 61 Cygni A          |           16.86 |            0.67 |       17.067440 |       99.993354
+  COMPLETED: Epsilon Eridani -> 61 Cygni A. Sol Time: 17.07 y. Attempts: 7.  Total running time: 0:01:18.801149
+Epsilon Eridani -> Procyon             |           11.51 |            0.64 |       11.716065 |       99.987433
+  COMPLETED: Epsilon Eridani -> Procyon. Sol Time: 11.72 y. Attempts: 7.  Total running time: 0:01:19.424480
+Epsilon Eridani -> Tau Ceti            |            5.46 |            0.54 |        5.670369 |       99.948583
+  COMPLETED: Epsilon Eridani -> Tau Ceti. Sol Time: 5.67 y. Attempts: 7.  Total running time: 0:01:19.671693
+Epsilon Eridani -> 82 G. Eridani       |           12.45 |            0.72 |       12.662306 |       99.988523
+  COMPLETED: Epsilon Eridani -> 82 G. Eridani. Sol Time: 12.66 y. Attempts: 7.  Total running time: 0:01:20.521012
+Epsilon Eridani -> Sigma Draconis      |           24.33 |            0.67 |       24.535762 |       99.997112
+  COMPLETED: Epsilon Eridani -> Sigma Draconis. Sol Time: 24.54 y. Attempts: 7.  Total running time: 0:01:21.369030
+Epsilon Eridani -> Ross 47             |           12.07 |            0.62 |       12.270108 |       99.988404
+  COMPLETED: Epsilon Eridani -> Ross 47. Sol Time: 12.27 y. Attempts: 7.  Total running time: 0:01:21.651302
+Epsilon Eridani -> Eta Cassiopeiae     |           19.47 |            0.65 |       19.669847 |       99.995867
+  COMPLETED: Epsilon Eridani -> Eta Cassiopeiae. Sol Time: 19.67 y. Attempts: 7.  Total running time: 0:01:22.306475
+
+>>> CHOSEN LEG: Epsilon Eridani -> Tau Ceti
+
+--- Calculating legs from: Tau Ceti (Time: 77.72 y) ---
+  SUBMITTED: Tau Ceti -> 70 Ophiuchi
+  SUBMITTED: Tau Ceti -> YZ Canis Minoris
+  SUBMITTED: Tau Ceti -> Altair
+  SUBMITTED: Tau Ceti -> Sirius
+  SUBMITTED: Tau Ceti -> 61 Cygni A
+  SUBMITTED: Tau Ceti -> Procyon
+  SUBMITTED: Tau Ceti -> 82 G. Eridani
+  SUBMITTED: Tau Ceti -> Sigma Draconis
+  SUBMITTED: Tau Ceti -> Ross 47
+  SUBMITTED: Tau Ceti -> Eta Cassiopeiae
+Tau Ceti -> 70 Ophiuchi                |           24.18 |            0.73 |       24.384569 |       99.996807
+  COMPLETED: Tau Ceti -> 70 Ophiuchi. Sol Time: 24.38 y. Attempts: 7.  Total running time: 0:01:23.524289
+Tau Ceti -> YZ Canis Minoris           |           23.09 |            0.68 |       23.287020 |       99.996794
+  COMPLETED: Tau Ceti -> YZ Canis Minoris. Sol Time: 23.29 y. Attempts: 7.  Total running time: 0:01:23.598545
+Tau Ceti -> Sirius                     |           13.62 |            0.63 |       13.820913 |       99.991614
+  COMPLETED: Tau Ceti -> Sirius. Sol Time: 13.82 y. Attempts: 7.  Total running time: 0:01:24.611327
+Tau Ceti -> Altair                     |           20.66 |            0.70 |       20.862777 |       99.996121
+  COMPLETED: Tau Ceti -> Altair. Sol Time: 20.86 y. Attempts: 7.  Total running time: 0:01:24.846551
+Tau Ceti -> 61 Cygni A                 |           15.67 |            0.64 |       15.877270 |       99.992866
+  COMPLETED: Tau Ceti -> 61 Cygni A. Sol Time: 15.88 y. Attempts: 7.  Total running time: 0:01:25.607290
+Tau Ceti -> Procyon                    |           16.57 |            0.65 |       16.773574 |       99.993258
+  COMPLETED: Tau Ceti -> Procyon. Sol Time: 16.77 y. Attempts: 7.  Total running time: 0:01:25.749661
+Tau Ceti -> 82 G. Eridani              |           11.90 |            0.65 |       12.106757 |       99.987392
+  COMPLETED: Tau Ceti -> 82 G. Eridani. Sol Time: 12.11 y. Attempts: 7.  Total running time: 0:01:26.610773
+Tau Ceti -> Sigma Draconis             |           24.86 |            0.82 |       25.072117 |       99.996923
+  COMPLETED: Tau Ceti -> Sigma Draconis. Sol Time: 25.07 y. Attempts: 7.  Total running time: 0:01:26.925317
+Tau Ceti -> Ross 47                    |           17.15 |            0.64 |       17.352114 |       99.994796
+  COMPLETED: Tau Ceti -> Ross 47. Sol Time: 17.35 y. Attempts: 7.  Total running time: 0:01:27.565186
+Tau Ceti -> Eta Cassiopeiae            |           19.83 |            0.66 |       20.031696 |       99.995944
+  COMPLETED: Tau Ceti -> Eta Cassiopeiae. Sol Time: 20.03 y. Attempts: 7.  Total running time: 0:01:27.737162
+
+>>> CHOSEN LEG: Tau Ceti -> 82 G. Eridani
+
+--- Calculating legs from: 82 G. Eridani (Time: 90.83 y) ---
+  SUBMITTED: 82 G. Eridani -> 70 Ophiuchi
+  SUBMITTED: 82 G. Eridani -> YZ Canis Minoris
+  SUBMITTED: 82 G. Eridani -> Altair
+  SUBMITTED: 82 G. Eridani -> Sirius
+  SUBMITTED: 82 G. Eridani -> 61 Cygni A
+  SUBMITTED: 82 G. Eridani -> Procyon
+  SUBMITTED: 82 G. Eridani -> Sigma Draconis
+  SUBMITTED: 82 G. Eridani -> Ross 47
+  SUBMITTED: 82 G. Eridani -> Eta Cassiopeiae
+82 G. Eridani -> YZ Canis Minoris      |           24.00 |            0.76 |       24.201450 |       99.996768
+  COMPLETED: 82 G. Eridani -> YZ Canis Minoris. Sol Time: 24.20 y. Attempts: 7.  Total running time: 0:01:28.940726
+82 G. Eridani -> 70 Ophiuchi           |           32.39 |            0.70 |       32.591539 |       99.998299
+  COMPLETED: 82 G. Eridani -> 70 Ophiuchi. Sol Time: 32.59 y. Attempts: 7.  Total running time: 0:01:29.144717
+82 G. Eridani -> Sirius                |           19.54 |            0.70 |       19.742584 |       99.995664
+  COMPLETED: 82 G. Eridani -> Sirius. Sol Time: 19.74 y. Attempts: 7.  Total running time: 0:01:30.091793
+82 G. Eridani -> Altair                |           30.32 |            0.70 |       30.523770 |       99.998076
+  COMPLETED: 82 G. Eridani -> Altair. Sol Time: 30.52 y. Attempts: 7.  Total running time: 0:01:30.121986
+82 G. Eridani -> Procyon               |           20.20 |            0.69 |       20.406810 |       99.995243
+  COMPLETED: 82 G. Eridani -> Procyon. Sol Time: 20.41 y. Attempts: 7.  Total running time: 0:01:31.075498
+82 G. Eridani -> 61 Cygni A            |           26.93 |            0.86 |       27.141592 |       99.997364
+  COMPLETED: 82 G. Eridani -> 61 Cygni A. Sol Time: 27.14 y. Attempts: 7.  Total running time: 0:01:31.330288
+82 G. Eridani -> Sigma Draconis        |           36.11 |            0.76 |       36.309597 |       99.998530
+  COMPLETED: 82 G. Eridani -> Sigma Draconis. Sol Time: 36.31 y. Attempts: 7.  Total running time: 0:01:32.124769
+82 G. Eridani -> Ross 47               |           18.89 |            0.71 |       19.094432 |       99.995126
+  COMPLETED: 82 G. Eridani -> Ross 47. Sol Time: 19.09 y. Attempts: 7.  Total running time: 0:01:32.471557
+82 G. Eridani -> Eta Cassiopeiae       |           31.13 |            0.70 |       31.328601 |       99.998171
+  COMPLETED: 82 G. Eridani -> Eta Cassiopeiae. Sol Time: 31.33 y. Attempts: 7.  Total running time: 0:01:33.126009
+
+>>> CHOSEN LEG: 82 G. Eridani -> Ross 47
+
+--- Calculating legs from: Ross 47 (Time: 110.92 y) ---
+  SUBMITTED: Ross 47 -> 70 Ophiuchi
+  SUBMITTED: Ross 47 -> YZ Canis Minoris
+  SUBMITTED: Ross 47 -> Altair
+  SUBMITTED: Ross 47 -> Sirius
+  SUBMITTED: Ross 47 -> 61 Cygni A
+  SUBMITTED: Ross 47 -> Procyon
+  SUBMITTED: Ross 47 -> Sigma Draconis
+  SUBMITTED: Ross 47 -> Eta Cassiopeiae
+Ross 47 -> 70 Ophiuchi                 |           35.50 |            0.78 |       35.698700 |       99.998426
+  COMPLETED: Ross 47 -> 70 Ophiuchi. Sol Time: 35.70 y. Attempts: 7.  Total running time: 0:01:34.195687
+Ross 47 -> YZ Canis Minoris            |           10.15 |            0.64 |       10.352567 |       99.984324
+  COMPLETED: Ross 47 -> YZ Canis Minoris. Sol Time: 10.35 y. Attempts: 7.  Total running time: 0:01:34.225431
+Ross 47 -> Altair                      |           33.98 |            0.73 |       34.183208 |       99.998346
+  COMPLETED: Ross 47 -> Altair. Sol Time: 34.18 y. Attempts: 7.  Total running time: 0:01:35.223122
+Ross 47 -> Sirius                      |           11.05 |            0.58 |       11.251899 |       99.988387
+  COMPLETED: Ross 47 -> Sirius. Sol Time: 11.25 y. Attempts: 7.  Total running time: 0:01:35.361838
+Ross 47 -> 61 Cygni A                  |           25.87 |            0.72 |       26.071012 |       99.997242
+  COMPLETED: Ross 47 -> 61 Cygni A. Sol Time: 26.07 y. Attempts: 7.  Total running time: 0:01:36.536464
+Ross 47 -> Procyon                     |           10.51 |            0.69 |       10.716289 |       99.983280
+  COMPLETED: Ross 47 -> Procyon. Sol Time: 10.72 y. Attempts: 7.  Total running time: 0:01:36.597085
+Ross 47 -> Sigma Draconis              |           29.40 |            0.69 |       29.599383 |       99.997872
+  COMPLETED: Ross 47 -> Sigma Draconis. Sol Time: 29.60 y. Attempts: 7.  Total running time: 0:01:37.603750
+Ross 47 -> Eta Cassiopeiae             |           23.63 |            0.74 |       23.833551 |       99.996931
+  COMPLETED: Ross 47 -> Eta Cassiopeiae. Sol Time: 23.83 y. Attempts: 7.  Total running time: 0:01:37.940558
+
+>>> CHOSEN LEG: Ross 47 -> YZ Canis Minoris
+
+--- Calculating legs from: YZ Canis Minoris (Time: 122.27 y) ---
+  SUBMITTED: YZ Canis Minoris -> 70 Ophiuchi
+  SUBMITTED: YZ Canis Minoris -> Altair
+  SUBMITTED: YZ Canis Minoris -> Sirius
+  SUBMITTED: YZ Canis Minoris -> 61 Cygni A
+  SUBMITTED: YZ Canis Minoris -> Procyon
+  SUBMITTED: YZ Canis Minoris -> Sigma Draconis
+  SUBMITTED: YZ Canis Minoris -> Eta Cassiopeiae
+YZ Canis Minoris -> 70 Ophiuchi        |           35.36 |            0.88 |       35.570238 |       99.998398
+  COMPLETED: YZ Canis Minoris -> 70 Ophiuchi. Sol Time: 35.57 y. Attempts: 7.  Total running time: 0:01:39.051121
+YZ Canis Minoris -> Altair             |           36.05 |            0.74 |       36.246530 |       99.998611
+  COMPLETED: YZ Canis Minoris -> Altair. Sol Time: 36.25 y. Attempts: 7.  Total running time: 0:01:39.059449
+YZ Canis Minoris -> Sirius             |           11.72 |            0.64 |       11.920815 |       99.988793
+  COMPLETED: YZ Canis Minoris -> Sirius. Sol Time: 11.92 y. Attempts: 7.  Total running time: 0:01:40.177588
+YZ Canis Minoris -> 61 Cygni A         |           28.58 |            0.82 |       28.790927 |       99.997664
+  COMPLETED: YZ Canis Minoris -> 61 Cygni A. Sol Time: 28.79 y. Attempts: 7.  Total running time: 0:01:40.248767
+YZ Canis Minoris -> Procyon            |            8.10 |            0.68 |        8.312918 |       99.972665
+  COMPLETED: YZ Canis Minoris -> Procyon. Sol Time: 8.31 y. Attempts: 7.  Total running time: 0:01:41.068487
+YZ Canis Minoris -> Sigma Draconis     |           30.81 |            0.67 |       31.005204 |       99.998148
+  COMPLETED: YZ Canis Minoris -> Sigma Draconis. Sol Time: 31.01 y. Attempts: 7.  Total running time: 0:01:41.222258
+YZ Canis Minoris -> Eta Cassiopeiae    |           28.51 |            0.68 |       28.705234 |       99.997916
+  COMPLETED: YZ Canis Minoris -> Eta Cassiopeiae. Sol Time: 28.71 y. Attempts: 7.  Total running time: 0:01:42.243662
+
+>>> CHOSEN LEG: YZ Canis Minoris -> Procyon
+
+--- Calculating legs from: Procyon (Time: 131.59 y) ---
+  SUBMITTED: Procyon -> 70 Ophiuchi
+  SUBMITTED: Procyon -> Altair
+  SUBMITTED: Procyon -> Sirius
+  SUBMITTED: Procyon -> 61 Cygni A
+  SUBMITTED: Procyon -> Sigma Draconis
+  SUBMITTED: Procyon -> Eta Cassiopeiae
+Procyon -> Altair                      |           27.96 |            0.72 |       28.166085 |       99.997538
+  COMPLETED: Procyon -> Altair. Sol Time: 28.17 y. Attempts: 7.  Total running time: 0:01:43.357012
+Procyon -> 70 Ophiuchi                 |           27.54 |            0.91 |       27.751467 |       99.997157
+  COMPLETED: Procyon -> 70 Ophiuchi. Sol Time: 27.75 y. Attempts: 7.  Total running time: 0:01:43.415747
+Procyon -> Sirius                      |            4.11 |            0.53 |        4.314251 |       99.916151
+  COMPLETED: Procyon -> Sirius. Sol Time: 4.31 y. Attempts: 7.  Total running time: 0:01:44.461658
+Procyon -> 61 Cygni A                  |           20.81 |            0.71 |       21.015396 |       99.995608
+  COMPLETED: Procyon -> 61 Cygni A. Sol Time: 21.02 y. Attempts: 7.  Total running time: 0:01:44.620461
+Procyon -> Sigma Draconis              |           24.46 |            0.77 |       24.669763 |       99.996874
+  COMPLETED: Procyon -> Sigma Draconis. Sol Time: 24.67 y. Attempts: 7.  Total running time: 0:01:45.731941
+Procyon -> Eta Cassiopeiae             |           22.85 |            0.86 |       23.063548 |       99.996245
+  COMPLETED: Procyon -> Eta Cassiopeiae. Sol Time: 23.06 y. Attempts: 7.  Total running time: 0:01:45.806973
+
+>>> CHOSEN LEG: Procyon -> Sirius
+
+--- Calculating legs from: Sirius (Time: 136.90 y) ---
+  SUBMITTED: Sirius -> 70 Ophiuchi
+  SUBMITTED: Sirius -> Altair
+  SUBMITTED: Sirius -> 61 Cygni A
+  SUBMITTED: Sirius -> Sigma Draconis
+  SUBMITTED: Sirius -> Eta Cassiopeiae
+Sirius -> Altair                       |           24.63 |            0.68 |       24.829580 |       99.997179
+  COMPLETED: Sirius -> Altair. Sol Time: 24.83 y. Attempts: 7.  Total running time: 0:01:46.950775
+Sirius -> 70 Ophiuchi                  |           25.01 |            0.85 |       25.221281 |       99.997015
+  COMPLETED: Sirius -> 70 Ophiuchi. Sol Time: 25.22 y. Attempts: 7.  Total running time: 0:01:47.059354
+Sirius -> 61 Cygni A                   |           17.01 |            0.65 |       17.216140 |       99.994642
+  COMPLETED: Sirius -> 61 Cygni A. Sol Time: 17.22 y. Attempts: 7.  Total running time: 0:01:47.891149
+Sirius -> Sigma Draconis               |           21.19 |            0.67 |       21.387170 |       99.996416
+  COMPLETED: Sirius -> Sigma Draconis. Sol Time: 21.39 y. Attempts: 7.  Total running time: 0:01:48.014968
+Sirius -> Eta Cassiopeiae              |           19.10 |            0.70 |       19.303755 |       99.995554
+  COMPLETED: Sirius -> Eta Cassiopeiae. Sol Time: 19.30 y. Attempts: 7.  Total running time: 0:01:48.979413
+
+>>> CHOSEN LEG: Sirius -> 61 Cygni A
+
+--- Calculating legs from: 61 Cygni A (Time: 155.12 y) ---
+  SUBMITTED: 61 Cygni A -> 70 Ophiuchi
+  SUBMITTED: 61 Cygni A -> Altair
+  SUBMITTED: 61 Cygni A -> Sigma Draconis
+  SUBMITTED: 61 Cygni A -> Eta Cassiopeiae
+61 Cygni A -> 70 Ophiuchi              |           13.83 |            0.65 |       14.029547 |       99.990640
+  COMPLETED: 61 Cygni A -> 70 Ophiuchi. Sol Time: 14.03 y. Attempts: 7.  Total running time: 0:01:49.995154
+61 Cygni A -> Altair                   |            9.78 |            0.71 |        9.994475 |       99.980168
+  COMPLETED: 61 Cygni A -> Altair. Sol Time: 9.99 y. Attempts: 7.  Total running time: 0:01:50.094370
+61 Cygni A -> Sigma Draconis           |           11.19 |            0.64 |       11.396667 |       99.987054
+  COMPLETED: 61 Cygni A -> Sigma Draconis. Sol Time: 11.40 y. Attempts: 7.  Total running time: 0:01:51.118795
+61 Cygni A -> Eta Cassiopeiae          |           12.89 |            0.61 |       13.091546 |       99.990107
+  COMPLETED: 61 Cygni A -> Eta Cassiopeiae. Sol Time: 13.09 y. Attempts: 7.  Total running time: 0:01:51.173398
+
+>>> CHOSEN LEG: 61 Cygni A -> Altair
+
+--- Calculating legs from: Altair (Time: 166.11 y) ---
+  SUBMITTED: Altair -> 70 Ophiuchi
+  SUBMITTED: Altair -> Sigma Draconis
+  SUBMITTED: Altair -> Eta Cassiopeiae
+Altair -> 70 Ophiuchi                  |            7.80 |            0.66 |        8.006830 |       99.968888
+  COMPLETED: Altair -> 70 Ophiuchi. Sol Time: 8.01 y. Attempts: 7.  Total running time: 0:01:52.101256
+Altair -> Sigma Draconis               |           18.06 |            0.69 |       18.264019 |       99.994434
+  COMPLETED: Altair -> Sigma Draconis. Sol Time: 18.26 y. Attempts: 7.  Total running time: 0:01:52.161176
+Altair -> Eta Cassiopeiae              |           21.88 |            0.67 |       22.076794 |       99.996449
+  COMPLETED: Altair -> Eta Cassiopeiae. Sol Time: 22.08 y. Attempts: 7.  Total running time: 0:01:53.111520
+
+>>> CHOSEN LEG: Altair -> 70 Ophiuchi
+
+--- Calculating legs from: 70 Ophiuchi (Time: 175.12 y) ---
+  SUBMITTED: 70 Ophiuchi -> Sigma Draconis
+  SUBMITTED: 70 Ophiuchi -> Eta Cassiopeiae
+70 Ophiuchi -> Sigma Draconis          |           20.11 |            0.74 |       20.312554 |       99.995452
+  COMPLETED: 70 Ophiuchi -> Sigma Draconis. Sol Time: 20.31 y. Attempts: 7.  Total running time: 0:01:54.117528
+70 Ophiuchi -> Eta Cassiopeiae         |           26.36 |            0.71 |       26.566525 |       99.997305
+  COMPLETED: 70 Ophiuchi -> Eta Cassiopeiae. Sol Time: 26.57 y. Attempts: 7.  Total running time: 0:01:54.449466
+
+>>> CHOSEN LEG: 70 Ophiuchi -> Sigma Draconis
+
+--- Calculating legs from: Sigma Draconis (Time: 196.43 y) ---
+  SUBMITTED: Sigma Draconis -> Eta Cassiopeiae
+Sigma Draconis -> Eta Cassiopeiae      |           11.21 |            0.62 |       11.417006 |       99.986362
+  COMPLETED: Sigma Draconis -> Eta Cassiopeiae. Sol Time: 11.42 y. Attempts: 7.  Total running time: 0:01:55.508595
+
+>>> CHOSEN LEG: Sigma Draconis -> Eta Cassiopeiae
+
+--- Calculating final leg from: Eta Cassiopeiae -> Sol ---
+  COMPLETED: Eta Cassiopeiae -> Sol. Sol Time: 19.54 y. Attempts: 7

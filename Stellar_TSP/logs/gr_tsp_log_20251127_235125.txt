@@ -1,0 +1,58 @@
+Stellar TSP Log - 2025-11-27T23:51:25.690589
+Acceleration: 1.0 G
+Start Star: Sol
+End Star: Sol
+==================================================
+
+
+--- Leg-by-Leg Analysis ---
+Leg                                    |   Distance (ly) |   Ship Time (y) |    Sol Time (y) |  Max Speed (%c)
+------------------------------------------------------------------------------------------------------------------------
+--- Calculating legs from: Sol (Time: 0.00 y) ---
+  SUBMITTED: Sol -> Sirius
+  SUBMITTED: Sol -> Barnard's Star
+  SUBMITTED: Sol -> Wolf 359
+  SUBMITTED: Sol -> Alpha Centauri
+Sol -> Barnard's Star                  |            5.96 |            3.57 |        7.953909 |       97.800987
+  COMPLETED: Sol -> Barnard's Star. Sol Time: 7.95 y. Attempts: 7.  Total running time: 0:00:01.573961
+Sol -> Sirius                          |            8.71 |            3.91 |       10.743390 |       98.848787
+  COMPLETED: Sol -> Sirius. Sol Time: 10.74 y. Attempts: 7.  Total running time: 0:00:01.618687
+Sol -> Wolf 359                        |            7.86 |            3.80 |        9.883022 |       98.722038
+  COMPLETED: Sol -> Wolf 359. Sol Time: 9.88 y. Attempts: 7.  Total running time: 0:00:02.213320
+Sol -> Alpha Centauri                  |            4.34 |            3.26 |        6.291760 |       97.068201
+  COMPLETED: Sol -> Alpha Centauri. Sol Time: 6.29 y. Attempts: 7.  Total running time: 0:00:02.249501
+
+>>> CHOSEN LEG: Sol -> Alpha Centauri
+
+--- Calculating legs from: Alpha Centauri (Time: 7.29 y) ---
+  SUBMITTED: Alpha Centauri -> Sirius
+  SUBMITTED: Alpha Centauri -> Barnard's Star
+  SUBMITTED: Alpha Centauri -> Wolf 359
+Alpha Centauri -> Sirius               |           11.43 |            4.08 |       13.480942 |       99.219244
+  COMPLETED: Alpha Centauri -> Sirius. Sol Time: 13.48 y. Attempts: 7.  Total running time: 0:00:02.632120
+Alpha Centauri -> Barnard's Star       |            6.46 |            3.56 |        8.468520 |       98.377975
+  COMPLETED: Alpha Centauri -> Barnard's Star. Sol Time: 8.47 y. Attempts: 7.  Total running time: 0:00:02.719391
+Alpha Centauri -> Wolf 359             |            8.32 |            3.96 |       10.356023 |       98.671128
+  COMPLETED: Alpha Centauri -> Wolf 359. Sol Time: 10.36 y. Attempts: 7.  Total running time: 0:00:03.050914
+
+>>> CHOSEN LEG: Alpha Centauri -> Barnard's Star
+
+--- Calculating legs from: Barnard's Star (Time: 16.76 y) ---
+  SUBMITTED: Barnard's Star -> Sirius
+  SUBMITTED: Barnard's Star -> Wolf 359
+Barnard's Star -> Wolf 359             |           10.99 |            4.21 |       13.044883 |       99.227236
+  COMPLETED: Barnard's Star -> Wolf 359. Sol Time: 13.04 y. Attempts: 7.  Total running time: 0:00:03.450406
+Barnard's Star -> Sirius               |           14.35 |            4.35 |       16.411434 |       99.484770
+  COMPLETED: Barnard's Star -> Sirius. Sol Time: 16.41 y. Attempts: 7.  Total running time: 0:00:03.578102
+
+>>> CHOSEN LEG: Barnard's Star -> Wolf 359
+
+--- Calculating legs from: Wolf 359 (Time: 30.81 y) ---
+  SUBMITTED: Wolf 359 -> Sirius
+Wolf 359 -> Sirius                     |            8.56 |            4.18 |       10.567273 |       98.698163
+  COMPLETED: Wolf 359 -> Sirius. Sol Time: 10.57 y. Attempts: 7.  Total running time: 0:00:03.996947
+
+>>> CHOSEN LEG: Wolf 359 -> Sirius
+
+--- Calculating final leg from: Sirius -> Sol ---
+  COMPLETED: Sirius -> Sol. Sol Time: 10.75 y. Attempts: 7

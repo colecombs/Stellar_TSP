@@ -1,0 +1,58 @@
+Stellar TSP Log - 2025-11-27T23:46:41.414925
+Acceleration: 1.0 G
+Start Star: Sol
+End Star: Eta Cassiopeiae
+==================================================
+
+
+--- Leg-by-Leg Analysis ---
+Leg                                    |   Distance (ly) |   Ship Time (y) |    Sol Time (y) |  Max Speed (%c)
+------------------------------------------------------------------------------------------------------------------------
+--- Calculating legs from: Sol (Time: 0.00 y) ---
+  SUBMITTED: Sol -> Procyon
+  SUBMITTED: Sol -> Ross 154
+  SUBMITTED: Sol -> Alpha Centauri
+  SUBMITTED: Sol -> Sigma Draconis
+Sol -> Procyon                         |           11.44 |            4.08 |       13.491662 |       99.230794
+  COMPLETED: Sol -> Procyon. Sol Time: 13.49 y. Attempts: 7.  Total running time: 0:00:02.260970
+Sol -> Ross 154                        |            9.68 |            3.97 |       11.725871 |       99.021922
+  COMPLETED: Sol -> Ross 154. Sol Time: 11.73 y. Attempts: 7.  Total running time: 0:00:02.302605
+Sol -> Alpha Centauri                  |            4.37 |            3.27 |        6.314833 |       97.083262
+  COMPLETED: Sol -> Alpha Centauri. Sol Time: 6.31 y. Attempts: 7.  Total running time: 0:00:03.604459
+Sol -> Sigma Draconis                  |           18.79 |            4.61 |       20.864397 |       99.672308
+  COMPLETED: Sol -> Sigma Draconis. Sol Time: 20.86 y. Attempts: 7.  Total running time: 0:00:03.696272
+
+>>> CHOSEN LEG: Sol -> Alpha Centauri
+
+--- Calculating legs from: Alpha Centauri (Time: 7.31 y) ---
+  SUBMITTED: Alpha Centauri -> Procyon
+  SUBMITTED: Alpha Centauri -> Ross 154
+  SUBMITTED: Alpha Centauri -> Sigma Draconis
+Alpha Centauri -> Procyon              |           13.11 |            3.96 |       15.157417 |       99.479304
+  COMPLETED: Alpha Centauri -> Procyon. Sol Time: 15.16 y. Attempts: 7.  Total running time: 0:00:04.548245
+Alpha Centauri -> Ross 154             |            9.35 |            4.03 |       11.392185 |       99.030002
+  COMPLETED: Alpha Centauri -> Ross 154. Sol Time: 11.39 y. Attempts: 7.  Total running time: 0:00:04.554561
+Alpha Centauri -> Sigma Draconis       |           21.19 |            4.74 |       23.262832 |       99.753030
+  COMPLETED: Alpha Centauri -> Sigma Draconis. Sol Time: 23.26 y. Attempts: 7.  Total running time: 0:00:05.436054
+
+>>> CHOSEN LEG: Alpha Centauri -> Ross 154
+
+--- Calculating legs from: Ross 154 (Time: 19.71 y) ---
+  SUBMITTED: Ross 154 -> Procyon
+  SUBMITTED: Ross 154 -> Sigma Draconis
+Ross 154 -> Procyon                    |           17.61 |            4.61 |       19.689654 |       99.609211
+  COMPLETED: Ross 154 -> Procyon. Sol Time: 19.69 y. Attempts: 7.  Total running time: 0:00:06.305530
+Ross 154 -> Sigma Draconis             |           24.38 |            5.04 |       26.474096 |       99.754136
+  COMPLETED: Ross 154 -> Sigma Draconis. Sol Time: 26.47 y. Attempts: 7.  Total running time: 0:00:06.426981
+
+>>> CHOSEN LEG: Ross 154 -> Procyon
+
+--- Calculating legs from: Procyon (Time: 40.40 y) ---
+  SUBMITTED: Procyon -> Sigma Draconis
+Procyon -> Sigma Draconis              |           27.01 |            4.98 |       29.088813 |       99.835878
+  COMPLETED: Procyon -> Sigma Draconis. Sol Time: 29.09 y. Attempts: 7.  Total running time: 0:00:07.340776
+
+>>> CHOSEN LEG: Procyon -> Sigma Draconis
+
+--- Calculating final leg from: Sigma Draconis -> Eta Cassiopeiae ---
+  COMPLETED: Sigma Draconis -> Eta Cassiopeiae. Sol Time: 35.34 y. Attempts: 7

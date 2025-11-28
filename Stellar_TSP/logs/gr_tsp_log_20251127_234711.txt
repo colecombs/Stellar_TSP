@@ -1,0 +1,58 @@
+Stellar TSP Log - 2025-11-27T23:47:12.006453
+Acceleration: 1.0 G
+Start Star: Gaia DR3 4301030xavier
+End Star: Sol
+==================================================
+
+
+--- Leg-by-Leg Analysis ---
+Leg                                    |   Distance (ly) |   Ship Time (y) |    Sol Time (y) |  Max Speed (%c)
+------------------------------------------------------------------------------------------------------------------------
+--- Calculating legs from: Gaia DR3 4301030xavier (Time: 0.00 y) ---
+  SUBMITTED: Gaia DR3 4301030xavier -> Tau Ceti
+  SUBMITTED: Gaia DR3 4301030xavier -> Eta Cassiopeiae
+  SUBMITTED: Gaia DR3 4301030xavier -> Proxima Centauri
+  SUBMITTED: Gaia DR3 4301030xavier -> Sirius
+Gaia DR3 4301030xavier -> Tau Ceti     |           22.14 |            4.95 |       24.231061 |       99.722490
+  COMPLETED: Gaia DR3 4301030xavier -> Tau Ceti. Sol Time: 24.23 y. Attempts: 7.  Total running time: 0:00:01.875144
+Gaia DR3 4301030xavier -> Eta Cassiopeiae |           30.08 |            5.19 |       32.165957 |       99.854239
+  COMPLETED: Gaia DR3 4301030xavier -> Eta Cassiopeiae. Sol Time: 32.17 y. Attempts: 7.  Total running time: 0:00:02.274274
+Gaia DR3 4301030xavier -> Proxima Centauri |           15.40 |            4.42 |       17.471374 |       99.557972
+  COMPLETED: Gaia DR3 4301030xavier -> Proxima Centauri. Sol Time: 17.47 y. Attempts: 7.  Total running time: 0:00:03.008457
+Gaia DR3 4301030xavier -> Sirius       |           24.57 |            5.35 |       26.678193 |       99.765600
+  COMPLETED: Gaia DR3 4301030xavier -> Sirius. Sol Time: 26.68 y. Attempts: 7.  Total running time: 0:00:03.332567
+
+>>> CHOSEN LEG: Gaia DR3 4301030xavier -> Proxima Centauri
+
+--- Calculating legs from: Proxima Centauri (Time: 18.47 y) ---
+  SUBMITTED: Proxima Centauri -> Tau Ceti
+  SUBMITTED: Proxima Centauri -> Eta Cassiopeiae
+  SUBMITTED: Proxima Centauri -> Sirius
+Proxima Centauri -> Eta Cassiopeiae    |           20.60 |            4.66 |       22.677098 |       99.719497
+  COMPLETED: Proxima Centauri -> Eta Cassiopeiae. Sol Time: 22.68 y. Attempts: 7.  Total running time: 0:00:04.242698
+Proxima Centauri -> Tau Ceti           |           13.29 |            4.31 |       15.355690 |       99.447066
+  COMPLETED: Proxima Centauri -> Tau Ceti. Sol Time: 15.36 y. Attempts: 7.  Total running time: 0:00:04.481575
+Proxima Centauri -> Sirius             |            9.34 |            3.92 |       11.378956 |       98.963249
+  COMPLETED: Proxima Centauri -> Sirius. Sol Time: 11.38 y. Attempts: 7.  Total running time: 0:00:05.100054
+
+>>> CHOSEN LEG: Proxima Centauri -> Sirius
+
+--- Calculating legs from: Sirius (Time: 30.85 y) ---
+  SUBMITTED: Sirius -> Tau Ceti
+  SUBMITTED: Sirius -> Eta Cassiopeiae
+Sirius -> Eta Cassiopeiae              |           18.55 |            4.71 |       20.632646 |       99.678706
+  COMPLETED: Sirius -> Eta Cassiopeiae. Sol Time: 20.63 y. Attempts: 7.  Total running time: 0:00:06.009021
+Sirius -> Tau Ceti                     |           14.03 |            4.28 |       16.087575 |       99.482120
+  COMPLETED: Sirius -> Tau Ceti. Sol Time: 16.09 y. Attempts: 7.  Total running time: 0:00:06.142479
+
+>>> CHOSEN LEG: Sirius -> Tau Ceti
+
+--- Calculating legs from: Tau Ceti (Time: 47.94 y) ---
+  SUBMITTED: Tau Ceti -> Eta Cassiopeiae
+Tau Ceti -> Eta Cassiopeiae            |            8.21 |            3.85 |       10.242723 |       98.749658
+  COMPLETED: Tau Ceti -> Eta Cassiopeiae. Sol Time: 10.24 y. Attempts: 7.  Total running time: 0:00:07.003575
+
+>>> CHOSEN LEG: Tau Ceti -> Eta Cassiopeiae
+
+--- Calculating final leg from: Eta Cassiopeiae -> Sol ---
+  COMPLETED: Eta Cassiopeiae -> Sol. Sol Time: 21.42 y. Attempts: 7
