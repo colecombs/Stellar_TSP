@@ -1,0 +1,58 @@
+Stellar TSP Log - 2025-11-06T01:08:24.695555
+Acceleration: 10.0 G
+Start Star: Sol
+End Star: Sol
+==================================================
+
+
+--- Leg-by-Leg Analysis ---
+Leg                                    |   Distance (ly) |   Ship Time (y) |    Sol Time (y) |  Max Speed (%c)
+------------------------------------------------------------------------------------------------------------------------
+--- Calculating legs from: Sol (Time: 0.00 y) ---
+  SUBMITTED: Sol -> Proxima Centauri
+  SUBMITTED: Sol -> Alpha Centauri
+  SUBMITTED: Sol -> Barnard's Star
+  SUBMITTED: Sol -> Sirius
+Sol -> Alpha Centauri                  |            4.34 |            0.54 |        4.551019 |       99.923388
+  COMPLETED: Sol -> Alpha Centauri. Sol Time: 4.55 y. Attempts: 7.  Total running time: 0:00:06.579451
+Sol -> Proxima Centauri                |            4.25 |            0.53 |        4.453183 |       99.921198
+  COMPLETED: Sol -> Proxima Centauri. Sol Time: 4.45 y. Attempts: 7.  Total running time: 0:00:06.609055
+Sol -> Barnard's Star                  |            5.96 |            0.58 |        6.167819 |       99.958539
+  COMPLETED: Sol -> Barnard's Star. Sol Time: 6.17 y. Attempts: 7.  Total running time: 0:00:06.641877
+Sol -> Sirius                          |            8.71 |            0.60 |        8.914479 |       99.979335
+  COMPLETED: Sol -> Sirius. Sol Time: 8.91 y. Attempts: 7.  Total running time: 0:00:07.622782
+
+>>> CHOSEN LEG: Sol -> Proxima Centauri
+
+--- Calculating legs from: Proxima Centauri (Time: 5.45 y) ---
+  SUBMITTED: Proxima Centauri -> Alpha Centauri
+  SUBMITTED: Proxima Centauri -> Barnard's Star
+  SUBMITTED: Proxima Centauri -> Sirius
+Proxima Centauri -> Alpha Centauri     |            0.19 |            0.26 |        0.367013 |       92.153652
+  COMPLETED: Proxima Centauri -> Alpha Centauri. Sol Time: 0.37 y. Attempts: 7.  Total running time: 0:00:11.540994
+Proxima Centauri -> Barnard's Star     |            6.56 |            0.56 |        6.762538 |       99.968069
+  COMPLETED: Proxima Centauri -> Barnard's Star. Sol Time: 6.76 y. Attempts: 7.  Total running time: 0:00:11.870585
+Proxima Centauri -> Sirius             |           11.27 |            0.78 |       11.487865 |       99.984830
+  COMPLETED: Proxima Centauri -> Sirius. Sol Time: 11.49 y. Attempts: 7.  Total running time: 0:00:12.599066
+
+>>> CHOSEN LEG: Proxima Centauri -> Alpha Centauri
+
+--- Calculating legs from: Alpha Centauri (Time: 6.82 y) ---
+  SUBMITTED: Alpha Centauri -> Barnard's Star
+  SUBMITTED: Alpha Centauri -> Sirius
+Alpha Centauri -> Barnard's Star       |            6.46 |            0.57 |        6.669734 |       99.960901
+  COMPLETED: Alpha Centauri -> Barnard's Star. Sol Time: 6.67 y. Attempts: 7.  Total running time: 0:00:16.802398
+Alpha Centauri -> Sirius               |           11.43 |            0.79 |       11.638970 |       99.985903
+  COMPLETED: Alpha Centauri -> Sirius. Sol Time: 11.64 y. Attempts: 7.  Total running time: 0:00:17.961490
+
+>>> CHOSEN LEG: Alpha Centauri -> Barnard's Star
+
+--- Calculating legs from: Barnard's Star (Time: 14.49 y) ---
+  SUBMITTED: Barnard's Star -> Sirius
+Barnard's Star -> Sirius               |           14.35 |            0.67 |       14.550766 |       99.991620
+  COMPLETED: Barnard's Star -> Sirius. Sol Time: 14.55 y. Attempts: 7.  Total running time: 0:00:22.554561
+
+>>> CHOSEN LEG: Barnard's Star -> Sirius
+
+--- Calculating final leg from: Sirius -> Sol ---
+  COMPLETED: Sirius -> Sol. Sol Time: 8.91 y. Attempts: 7
