@@ -1,4 +1,5 @@
 import constants
+import multiprocessing
 
 def get_user_acceleration() -> float:
     """Prompts the user to enter the ship's acceleration."""
@@ -45,7 +46,7 @@ def get_user_csv_choice(available_files: list[str]) -> str:
     while True:
         try:
             # Default to the first file in the list
-            prompt = f"\nEnter the number for the dataset to use [1]: "
+            prompt = f"\nEnter the number for the dataset to use: "
             choice_input = input(prompt)
             if not choice_input:
                 return available_files[0]
@@ -61,7 +62,7 @@ def get_number_of_stops(max_stops: int) -> int:
     """Prompts the user for the number of stars to visit."""
     while True:
         try:
-            prompt = (f"Enter the number of stars to visit (1 to {max_stops}) [all]: ")
+            prompt = (f"Enter the number of stars to visit (1 - {max_stops}): ")
             num_input = input(prompt)
             if not num_input:
                 return max_stops # Default to all
@@ -113,6 +114,38 @@ def get_user_start_and_end_stars(all_stars: dict) -> tuple[str, str]:
             print("Error: Please enter a valid number.")
             
     return start_star, end_star
+
+def get_log_preference() -> bool:
+    """Asks the user if they want to create a log file."""
+    while True:
+        prompt = "\nCreate a log file for this tour? (y/n): "
+        choice = input(prompt).lower().strip()
+        if not choice or choice == 'y':
+            return True
+        if choice == 'n':
+            return False
+        print("Error: Please enter 'y' or 'n'.")
+
+def get_num_threads() -> int:
+    """Prompts the user for the number of threads to use for calculations."""
+    max_threads = multiprocessing.cpu_count()
+    # Suggest half the available threads, but ensure it's at least 1.
+    suggested_threads = max(1, max_threads // 2)
+
+    while True:
+        try:
+            prompt = f"Enter the number of threads for calculation (1 to {max_threads}) [{suggested_threads}]: "
+            choice_input = input(prompt)
+            if not choice_input:
+                return suggested_threads
+            
+            choice = int(choice_input)
+            if 1 <= choice <= max_threads:
+                return choice
+            else:
+                print(f"Error: Please enter a number between 1 and {max_threads}.")
+        except ValueError:
+            print("Error: Please enter a valid number.")
 
 def print_tour_summary(tour, leg_details):
     """Prints a formatted summary of the calculated tour."""

@@ -26,8 +26,6 @@ def resource_path(relative_path):
 
 def main():
     """Main execution function."""
-    start_time = time.perf_counter()
-
     # --- Data File Selection ---
     try:
         # We assume CSVs are in a 'data' subfolder
@@ -56,6 +54,11 @@ def main():
     start_star, end_star = ui.get_user_start_and_end_stars(all_stars)
     acceleration_g = ui.get_user_acceleration()
     rest_time_years = ui.get_user_rest_time()
+    create_log = ui.get_log_preference()
+    num_threads = ui.get_num_threads()
+
+    # Start the performance counter *after* all user input has been gathered.
+    start_time = time.perf_counter()
 
     # Determine intermediate stops based on user's choice
     intermediate_stops = []
@@ -74,7 +77,7 @@ def main():
 
     try:
         tour, ship_time, sol_time, leg_details = solver.solve_gr_tsp_nearest_neighbor(
-            all_stars, start_star, end_star, intermediate_stops, acceleration_g, rest_time_years
+            all_stars, start_star, end_star, intermediate_stops, acceleration_g, rest_time_years, create_log, num_threads
         )
 
         ui.print_tour_summary(tour, leg_details)

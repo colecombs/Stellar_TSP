@@ -2,6 +2,7 @@ import warnings
 from concurrent.futures import ProcessPoolExecutor, as_completed, TimeoutError
 import datetime
 import pathlib
+import time
 
 import numpy as np
 from scipy.integrate import solve_ivp
@@ -222,7 +223,7 @@ def relativistic_velocity_addition(v1, v2):
     # Simplified formula assuming v1 and v2 are parallel (or anti-parallel)
     return (v1 + v2) / (1 + np.dot(v1, v2) / c**2)
 
-def solve_gr_tsp_nearest_neighbor(stars, start_star: str, end_star: str, intermediate_stops: list[str], acceleration_g: float, rest_time_years: float):
+def solve_gr_tsp_nearest_neighbor(stars, start_star: str, end_star: str, intermediate_stops: list[str], acceleration_g: float, rest_time_years: float, create_log: bool, num_threads: int):
     """
     Solves the TSP using the GR-aware Nearest Neighbor heuristic.
     """
@@ -244,131 +245,129 @@ def solve_gr_tsp_nearest_neighbor(stars, start_star: str, end_star: str, interme
     cumulative_sol_time = 0.0
     leg_details_list = []
 
-    # --- Setup Log File ---
-    script_dir = pathlib.Path(__file__).parent
-    log_filename = f"gr_tsp_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-    log_filepath = script_dir / log_filename
-    print(f"\nLogging detailed output to: {log_filepath}")
+    log_file = None
+    if create_log:
+        # --- Setup Log File ---
+        script_dir = pathlib.Path(__file__).parent
+        log_filename = f"gr_tsp_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        log_filepath = script_dir / log_filename
+        print(f"\nLogging detailed output to: {log_filepath}")
+        log_file = open(log_filepath, 'w', encoding='utf-8')
 
-    with open(log_filepath, 'w', encoding='utf-8') as log_file:
-        start_time = datetime.datetime.now()
-        try:
+    def log_message(message):
+        if log_file:
+            log_file.write(message)
+            log_file.flush()
+
+    start_time = datetime.datetime.now()
+    try:
+        if create_log:
             log_file.write(f"Stellar TSP Log - {datetime.datetime.now().isoformat()}\n")
             log_file.write(f"Acceleration: {acceleration_g} G\n")
             log_file.write(f"Start Star: {start_star}\n")
             log_file.write(f"End Star: {end_star}\n")
             log_file.write("="*50 + "\n\n")
-            log_file.flush()
             
             log_file.write("\n--- Leg-by-Leg Analysis ---\n")
             log_file.write(f"{'Leg':<38s} | {'Distance (ly)':>15s} | {'Ship Time (y)':>15s} | "
                            f"{'Sol Time (y)':>15s} | {'Max Speed (%c)':>15s}\n")
             log_file.write("-" * 120 + "\n")
-            log_file.flush()
+            log_message("") # Flush header
 
-            def log_leg_details(start, end, result):
-                log_file.write(f"{f'{start} -> {end}':<38s} | {result['distance_ly']:>15.2f} | {result['ship_time_years']:>15.2f} | "
-                               f"{result['sol_time_years']:>15.6f} | {result['max_speed_percent_c']:>15.6f}\n")
-                log_file.flush()
+        print("\nStarting GR Tour Calculation. This will take some time...")
+        print(f"Using {num_threads} threads. Press CTRL+C to interrupt and see partial results.")
 
+        with ProcessPoolExecutor(max_workers=num_threads) as executor:
+            while intermediate_stars:
+                print(f"\nCalculating legs from: {current_star_name}. Remaining intermediate: {len(intermediate_stars)}")
+                log_message(f"--- Calculating legs from: {current_star_name} (Time: {cumulative_sol_time:.2f} y) ---\n")
+                
+                tasks = {}
+                for next_star_name in intermediate_stars:
+                    args = (stars[current_star_name], stars[next_star_name], stars, cumulative_sol_time, acceleration_g)
+                    future = executor.submit(solve_leg_with_gravity, args)
+                    tasks[future] = (stars[current_star_name].name, next_star_name)
+                    log_message(f"  SUBMITTED: {tasks[future][0]} -> {tasks[future][1]}\n")
 
+                results = []
+                completed_count = 0
+                total_tasks = len(tasks)
+                for future in as_completed(tasks):
+                    start, end = tasks[future]
+                    completed_count += 1
+                    try:
+                        result = future.result(timeout=constants.LEG_CALCULATION_TIMEOUT_S)
+                        results.append(result)
+                        print(f"  ({completed_count}/{total_tasks}) > Completed leg: {start} -> {end} (Sol Time: {result['sol_time_years']:.2f} y)")
+                        completion_time = datetime.datetime.now()
+                        elapsed_time = completion_time - start_time
+                        log_message(f"{f'{start} -> {end}':<38s} | {result['distance_ly']:>15.2f} | {result['ship_time_years']:>15.2f} | "
+                                    f"{result['sol_time_years']:>15.6f} | {result['max_speed_percent_c']:>15.6f}\n")
+                        log_message(f"  COMPLETED: {start} -> {end}. Sol Time: {result['sol_time_years']:.2f} y. Attempts: {result.get('solver_attempts', 'N/A')}.  Total running time: {elapsed_time}\n")
+                    except TimeoutError:
+                        print(f"  ({completed_count}/{total_tasks}) > A leg calculation timed out: {start} -> {end}")
+                        log_message(f"  TIMEOUT: {start} -> {end} after {constants.LEG_CALCULATION_TIMEOUT_S}s\n")
+                    except Exception as e:
+                        print(f"  ({completed_count}/{total_tasks}) > A leg calculation failed: {start} -> {end}")
+                        log_message(f"  FAILED: {start} -> {end}. Error: {e}\n")
+                
+                # Yield the main thread briefly to allow worker processes to be scheduled more effectively,
+                # especially when logging (and its blocking I/O) is disabled.
+                time.sleep(0.01)
 
-
-
-            print("Starting GR Tour Calculation. This will take some time...")
-            print(f"Using {constants.NUM_THREADS} threads. Press CTRL+C to interrupt and see partial results.")
-
-            with ProcessPoolExecutor(max_workers=constants.NUM_THREADS) as executor:
-                while intermediate_stars:
-                    print(f"\nCalculating legs from: {current_star_name}. Remaining intermediate: {len(intermediate_stars)}")
-                    log_file.write(f"--- Calculating legs from: {current_star_name} (Time: {cumulative_sol_time:.2f} y) ---\n")
+                if not results:
+                    raise RuntimeError("All leg calculations failed. Cannot continue tour.")
                     
-                    tasks = {}
-                    for next_star_name in intermediate_stars:
-                        args = (stars[current_star_name], stars[next_star_name], stars, cumulative_sol_time, acceleration_g)
-                        submit_time = datetime.datetime.now()
-                        future = executor.submit(solve_leg_with_gravity, args)
-                        tasks[future] = (stars[current_star_name].name, next_star_name)
-                        log_file.write(f"  SUBMITTED: {tasks[future][0]} -> {tasks[future][1]}\n")
-                    log_file.flush()
+                best_leg_details = min(results, key=lambda r: r['sol_time_years'])
 
-                    results = []
-                    completed_count = 0
-                    total_tasks = len(tasks)
-                    for future in as_completed(tasks):
-                        start, end = tasks[future]
-                        completed_count += 1
-                        try:
-                            result = future.result(timeout=constants.LEG_CALCULATION_TIMEOUT_S)
-                            results.append(result)
-                            print(f"  ({completed_count}/{total_tasks}) > Completed leg: {start} -> {end} (Sol Time: {result['sol_time_years']:.2f} y)")
-                            completion_time = datetime.datetime.now()                            
-                            log_leg_details(start,end,result)
-                            elapsed_time = completion_time - start_time
-                            log_file.write(f"  COMPLETED: {start} -> {end}. Sol Time: {result['sol_time_years']:.2f} y. Attempts: {result.get('solver_attempts', 'N/A')}.  Total running time: {elapsed_time}\n")
-                        except TimeoutError:
-                            print(f"  ({completed_count}/{total_tasks}) > A leg calculation timed out: {start} -> {end}")
-                            log_file.write(f"  TIMEOUT: {start} -> {end} after {constants.LEG_CALCULATION_TIMEOUT_S}s\n")
-                        except Exception as e:
-                            print(f"  ({completed_count}/{total_tasks}) > A leg calculation failed: {start} -> {end}")
-                            log_file.write(f"  FAILED: {start} -> {end}. Error: {e}\n")
-                        finally:
-                            log_file.flush()
+                if best_leg_details['sol_time_years'] == float('inf'):
+                    raise RuntimeError(f"Could not find a valid path from {current_star_name} to any remaining star. Tour aborted.")
 
-                    if not results:
-                        raise RuntimeError("All leg calculations failed. Cannot continue tour.")
-                        
-                    best_leg_details = min(results, key=lambda r: r['sol_time_years'])
+                best_next_star = best_leg_details['end_star']
+                
+                leg_details_list.append(best_leg_details)
+                total_ship_time += best_leg_details['ship_time_years']
+                total_sol_time += best_leg_details['sol_time_years']
+                cumulative_sol_time += best_leg_details['sol_time_years']
 
-                    if best_leg_details['sol_time_years'] == float('inf'):
-                        raise RuntimeError(f"Could not find a valid path from {current_star_name} to any remaining star. Tour aborted.")
+                total_ship_time += rest_time_years
+                total_sol_time += rest_time_years
+                cumulative_sol_time += rest_time_years
 
-                    best_next_star = best_leg_details['end_star']
-                    
-                    leg_details_list.append(best_leg_details)
-                    total_ship_time += best_leg_details['ship_time_years']
-                    total_sol_time += best_leg_details['sol_time_years']
-                    cumulative_sol_time += best_leg_details['sol_time_years']
+                current_star_name = best_next_star
+                tour.append(current_star_name)
+                intermediate_stars.remove(current_star_name)
+                log_message(f"\n>>> CHOSEN LEG: {best_leg_details['start_star']} -> {best_next_star}\n\n")
 
-                    total_ship_time += rest_time_years
-                    total_sol_time += rest_time_years
-                    cumulative_sol_time += rest_time_years
+            # --- Final leg to the destination star ---
+            print(f"\nCalculating final leg from: {current_star_name} -> {end_star}")
+            log_message(f"--- Calculating final leg from: {current_star_name} -> {end_star} ---\n")
+            args = (stars[current_star_name], stars[end_star], stars, cumulative_sol_time, acceleration_g)
+            final_leg_future = executor.submit(solve_leg_with_gravity, args)
+            try:
+                final_leg_details = final_leg_future.result(timeout=constants.LEG_CALCULATION_TIMEOUT_S)
+                print(f"  > Completed leg: {final_leg_details['start_star']} -> {final_leg_details['end_star']} (Sol Time: {final_leg_details['sol_time_years']:.2f} y)")
+                log_message(f"  COMPLETED: {final_leg_details['start_star']} -> {final_leg_details['end_star']}. Sol Time: {final_leg_details['sol_time_years']:.2f} y. Attempts: {final_leg_details.get('solver_attempts', 'N/A')}\n")
+            except TimeoutError:
+                print(f"  > Final leg calculation timed out after {constants.LEG_CALCULATION_TIMEOUT_S} seconds.")
+                log_message(f"  TIMEOUT: {current_star_name} -> {end_star} after {constants.LEG_CALCULATION_TIMEOUT_S}s\n")
+                final_leg_details = {'start_star': current_star_name, 'end_star': end_star, 'sol_time_years': float('inf'), 'ship_time_years': float('inf')}
+            except Exception as e:
+                print(f"  > Final leg calculation failed: {e}")
+                log_message(f"  FAILED: {current_star_name} -> {end_star}. Error: {e}\n")
+                final_leg_details = {'start_star': current_star_name, 'end_star': end_star, 'sol_time_years': float('inf'), 'ship_time_years': float('inf')}
 
-                    current_star_name = best_next_star
-                    tour.append(current_star_name)
-                    intermediate_stars.remove(current_star_name)
-                    log_file.write(f"\n>>> CHOSEN LEG: {best_leg_details['start_star']} -> {best_next_star}\n\n")
-                    log_file.flush()
+            leg_details_list.append(final_leg_details)
+            total_ship_time += final_leg_details.get('ship_time_years', 0)
+            total_sol_time += final_leg_details.get('sol_time_years', 0)
+            tour.append(end_star)
 
-                # --- Final leg to the destination star ---
-                print(f"\nCalculating final leg from: {current_star_name} -> {end_star}")
-                log_file.write(f"--- Calculating final leg from: {current_star_name} -> {end_star} ---\n")
-                log_file.flush()
-                args = (stars[current_star_name], stars[end_star], stars, cumulative_sol_time, acceleration_g)
-                final_leg_future = executor.submit(solve_leg_with_gravity, args)
-                try:
-                    final_leg_details = final_leg_future.result(timeout=constants.LEG_CALCULATION_TIMEOUT_S)
-                    print(f"  > Completed leg: {final_leg_details['start_star']} -> {final_leg_details['end_star']} (Sol Time: {final_leg_details['sol_time_years']:.2f} y)")
-                    log_file.write(f"  COMPLETED: {final_leg_details['start_star']} -> {final_leg_details['end_star']}. Sol Time: {final_leg_details['sol_time_years']:.2f} y. Attempts: {final_leg_details.get('solver_attempts', 'N/A')}\n")
-                except TimeoutError:
-                    print(f"  > Final leg calculation timed out after {constants.LEG_CALCULATION_TIMEOUT_S} seconds.")
-                    log_file.write(f"  TIMEOUT: {current_star_name} -> {end_star} after {constants.LEG_CALCULATION_TIMEOUT_S}s\n")
-                    final_leg_details = {'start_star': current_star_name, 'end_star': end_star, 'sol_time_years': float('inf'), 'ship_time_years': float('inf')}
-                except Exception as e:
-                    print(f"  > Final leg calculation failed: {e}")
-                    log_file.write(f"  FAILED: {current_star_name} -> {end_star}. Error: {e}\n")
-                    final_leg_details = {'start_star': current_star_name, 'end_star': end_star, 'sol_time_years': float('inf'), 'ship_time_years': float('inf')}
-                finally:
-                    log_file.flush()
-
-                leg_details_list.append(final_leg_details)
-                total_ship_time += final_leg_details.get('ship_time_years', 0)
-                total_sol_time += final_leg_details.get('sol_time_years', 0)
-                tour.append(end_star)
-
-        except KeyboardInterrupt:
-            print("\n\nTour calculation interrupted by user. Showing results for completed legs.")
-            log_file.write("\n" + "="*50 + "\n")
-            log_file.write("Tour calculation interrupted by user.\n")
+    except KeyboardInterrupt:
+        print("\n\nTour calculation interrupted by user. Showing results for completed legs.")
+        log_message("\n" + "="*50 + "\n")
+        log_message("Tour calculation interrupted by user.\n")
+    finally:
+        if log_file:
+            log_file.close()
 
     return tour, total_ship_time, total_sol_time, leg_details_list
